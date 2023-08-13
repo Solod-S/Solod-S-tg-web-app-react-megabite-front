@@ -26,8 +26,8 @@ const socialItems = [
   },
   {
     id: "s4",
-    title: "Linkedin",
-    link: "https://www.youtube.com/channel/UCkLPPOZ3af6jK68AqVnbFeQ",
+    title: "Youtube",
+    link: "https://www.youtube.com/",
     icon: <YoutubeIcon size={20} color="grey" />,
   },
 ];

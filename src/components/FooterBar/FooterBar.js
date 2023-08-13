@@ -57,7 +57,7 @@ function FooterBar() {
             </Address>
           </ContactWrapper>
           <SocialWrapper>
-            <SociaTitle>Find us here</SociaTitle>
+            <SociaTitle>Знайди нас тут</SociaTitle>
             <SociaList>
               {socialItems.length > 0 &&
                 socialItems.map(({ link, icon, id }) => (

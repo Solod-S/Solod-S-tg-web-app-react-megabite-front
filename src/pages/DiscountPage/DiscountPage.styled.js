@@ -1,19 +1,25 @@
 import styled from "styled-components";
+import { TiArrowBack } from "react-icons/ti";
 
 import { NavLink } from "react-router-dom";
 
-export const Link = styled(NavLink)`
-  width: 118px;
+export const NameIcon = styled(TiArrowBack)`
+  transition: fill 250ms linear;
+  margin-right: 5px;
   color: ${(p) => p.theme.colors.primaryAccentColor};
+`;
+
+export const Link = styled(NavLink)`
+  color: ${(p) => p.theme.colors.primaryAccentColor};
+  font-size: ${(p) => p.theme.fontSizes.xs};
+  font-weight: 800;
   margin-bottom: 20px;
-  display: block;
+  display: inline-flex;
   text-decoration: none;
-  display: flex;
   align-items: center;
   position: relative;
   ::after {
     content: "";
-    display: inline-block;
     width: 100%;
     height: 1px;
     background-color: ${(p) => p.theme.colors.primaryAccentColor};

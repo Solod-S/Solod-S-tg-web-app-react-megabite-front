@@ -37,7 +37,6 @@ export const Navigation = styled.div`
 `;
 
 export const Logo = styled(NavLink)`
-
   @media screen and (min-width: ${(p) => p.theme.breakpoints.desktop}) {
     font-size: ${(p) => p.theme.fontSizes.xl};
     margin-right: 90px;
@@ -188,6 +187,7 @@ export const ContactItem = styled.li`
       margin-bottom: 32px;
     }
   }
+
   @media screen and (min-width: ${(p) =>
       p.theme.breakpoints.tablet}) and (max-width: ${(p) =>
       p.theme.breakpoints.beeforeDesktop}) {

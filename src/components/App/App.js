@@ -1,7 +1,7 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import SharedLayout from "../SharedLayout/SharedLayout";
-import { MenuPage, DiscountPage } from "../../pages";
+import { MenuPage, DiscountPage, FormPage } from "../../pages";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route end path="/" element={<SharedLayout />}>
           <Route index element={<MenuPage />} />
+          <Route path="/form" element={<FormPage />} />
           <Route path="/discount" element={<DiscountPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

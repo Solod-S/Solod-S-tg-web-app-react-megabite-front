@@ -8,11 +8,11 @@ import {
   MenuItem,
   LogoImg,
   // MenuLink,
-  ContactList,
-  ContactItem,
-  ContactLink,
-  SmartPhoneIcon,
-  MailInIcon,
+  // ContactList,
+  // ContactItem,
+  // ContactLink,
+  // SmartPhoneIcon,
+  // MailInIcon,
 } from "./AppBar.styled";
 
 import logoImgFile from "../../images/logo.png";
@@ -35,7 +35,7 @@ function AppBar() {
               </MenuItem>
             </MenuList>
           </Menu>
-          <ContactList>
+          {/* <ContactList>
             <ContactItem>
               <ContactLink href="mailto:info@devstudio.com">
                 <MailInIcon size={16} color="black" />
@@ -58,7 +58,7 @@ function AppBar() {
                 (044)377-72-87
               </ContactLink>
             </ContactItem>
-          </ContactList>
+          </ContactList> */}
         </MenuWrapper>
       </Navigation>
     </Header>

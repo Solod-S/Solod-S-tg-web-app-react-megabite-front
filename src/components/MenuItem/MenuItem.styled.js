@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Poster = styled.img`
   display: block;
   width: 100%;
-  height: 294px;
+  max-height: 294px;
 `;
 export const Overflow = styled.div``;
 
@@ -22,13 +22,17 @@ export const PosterOverFlow = styled.p`
   padding: 63px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  font-size: ${(p) => p.theme.fontSizes.l};
+  font-size: ${(p) => p.theme.fontSizes.s};
+
   text-align: center;
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: ${(p) => p.theme.colors.primaryWhiteColor};
   background: rgba(33, 150, 243, 0.9);
   opacity: 1;
+  @media screen and (min-width: 370px) {
+    font-size: ${(p) => p.theme.fontSizes.m};
+  }
 `;
 
 export const TextWraper = styled.div`

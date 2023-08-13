@@ -35,7 +35,11 @@ function MenuItem({ itemProps, location }) {
     case location === "discount":
       return (
         <Item>
-          <Link to={itemProps.url}>
+          <Link
+            to={itemProps.url}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
             <Wrapper>
               <Poster
                 src={itemProps.img}

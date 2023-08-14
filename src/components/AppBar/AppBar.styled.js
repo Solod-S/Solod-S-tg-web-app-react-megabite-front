@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { GiSmartphone } from "react-icons/gi";
+import { BiLogoTelegram } from "react-icons/bi";
 // import { IoMailOutline } from 'react-icons/io5';
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -279,6 +280,14 @@ export const SmartPhoneIcon = styled(GiSmartphone)`
 `;
 
 export const MailInIcon = styled(AiOutlineMail)`
+  margin-right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  ${ContactLink}:hover & {
+    fill: ${(p) => p.theme.colors.primaryAccentColor};
+  }
+`;
+
+export const TelegramInIcon = styled(BiLogoTelegram)`
   margin-right: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   ${ContactLink}:hover & {

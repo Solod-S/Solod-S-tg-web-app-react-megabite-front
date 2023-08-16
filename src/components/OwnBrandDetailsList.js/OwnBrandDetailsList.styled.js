@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MenuList = styled.ul`
+export const OwnBrandlsList = styled.ul`
   display: flex;
   margin-bottom: 20px;
   flex-wrap: wrap;

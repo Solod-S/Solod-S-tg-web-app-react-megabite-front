@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const Poster = styled.img`
   display: block;
   width: 100%;
-  max-height: 294px;
+  /* max-height: 294px; */
 `;
 export const Overflow = styled.div``;
 

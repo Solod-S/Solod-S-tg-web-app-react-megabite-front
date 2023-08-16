@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import menuData from "../../data/menuData";
 
+import { BackBtn } from "../../components";
 import {
-  Link,
   Main,
   Section,
   Title,
@@ -26,9 +26,7 @@ function MenuItemPage() {
   return (
     <Main>
       <section className="container">
-        <Link to="/" className="MenuItemPage-link">
-          Назад до меню
-        </Link>
+        <BackBtn location="/" />
         <Section>
           <Title>{menuItems.title}</Title>
           <Info>

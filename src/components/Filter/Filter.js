@@ -1,13 +1,13 @@
 import { BtnSet } from "./Filter.styled";
 import FilterItem from "../FilterItem/FilterItem";
 
-import portfolioFilters from "../../data/portfolioFilter";
+import ownBrandsFilters from "../../data/ownBrandsFilters";
 
 function Filter({ setCurrentFilter }) {
   return (
     <BtnSet>
-      {portfolioFilters.length > 0 &&
-        portfolioFilters.map(({ id, filter, title }) => (
+      {ownBrandsFilters.length > 0 &&
+        ownBrandsFilters.map(({ id, filter, title }) => (
           <FilterItem
             key={id}
             filter={filter}

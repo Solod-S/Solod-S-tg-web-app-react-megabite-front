@@ -9,25 +9,6 @@ function Menu({ data, location }) {
     setitemList(data);
   }, [data, location]);
 
-  // switch (true) {
-  //   case location === "mainMenu":
-  //     return (
-  //       <MenuList>
-  //         {itemList.length > 0 &&
-  //           itemList.map((itemProps) => (
-  //             <MenuItem
-  //               key={itemProps.id}
-  //               itemProps={itemProps}
-  //               location={location}
-  //             />
-  //           ))}
-  //       </MenuList>
-  //     );
-
-  //   default:
-  //     break;
-  // }
-
   return (
     <MenuList>
       {itemList.length > 0 &&

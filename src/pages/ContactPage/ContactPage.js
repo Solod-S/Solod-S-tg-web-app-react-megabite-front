@@ -1,21 +1,14 @@
-import { Location } from "../../components";
+import { Location, BackBtn } from "../../components";
 
-import {
-  PortfolioSection,
-  Wrapper,
-  Link,
-  NameIcon,
-} from "./ContactPage.styled";
+import { PortfolioSection, Wrapper } from "./ContactPage.styled";
 
 function ContactPage() {
   return (
     <PortfolioSection className="section">
       <Wrapper className="container">
-        <Link to="/" className="MenuItemPage-link">
-          <NameIcon />
-          Назад до меню
-        </Link>
+        <BackBtn location="/" />
         <Location />
+        <BackBtn location="/" />
       </Wrapper>
     </PortfolioSection>
   );

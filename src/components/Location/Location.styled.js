@@ -7,7 +7,10 @@ export const LocationSection = styled.section`
   }
 `;
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  background-color: ${(p) => p.theme.colors.primaryBgColor};
+  margin-bottom: 20px;
+`;
 
 export const Title = styled.h2`
   color: ${(p) => p.theme.colors.primaryTitleColor};

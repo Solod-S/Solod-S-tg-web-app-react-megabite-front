@@ -5,7 +5,7 @@ import {
   WorkingTime,
   WorkingContacts,
   ContactsList,
-  LocationImg,
+  // LocationImg,
 } from "./Location.styled";
 import {
   ContactItem,
@@ -15,7 +15,7 @@ import {
   TelegramInIcon,
 } from "../../components/AppBar/AppBar.styled";
 
-import locationPic from "../../images/location.jpg";
+// import locationPic from "../../images/location.jpg";
 
 function Location() {
   return (
@@ -34,7 +34,7 @@ function Location() {
       <WorkingTime>
         Графік роботи: Пн-Пт: з 9 до 18-00, Сб-Вс: вихідний
       </WorkingTime>
-      <WorkingContacts>Our contacts</WorkingContacts>
+      <WorkingContacts>Наші контакти</WorkingContacts>
       <ContactsList>
         <ContactItem>
           <ContactLink href="tel:0443777287">
@@ -61,7 +61,7 @@ function Location() {
           </ContactLink>
         </ContactItem>
       </ContactsList>
-      <LocationImg src={locationPic} />
+      {/* <LocationImg src={locationPic} /> */}
     </Wrapper>
   );
 }

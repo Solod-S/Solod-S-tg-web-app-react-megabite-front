@@ -2,7 +2,8 @@ const ownbrandData = [
   {
     id: "ob1",
     title: "Захисні плівки серіїї Anti-Blue",
-    categoryLink: "",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
     img: require("../images/own-brands/mobile-screen-protection/Anti-Blue/1.jpg"),
     imgs: [
       require("../images/own-brands/mobile-screen-protection/Anti-Blue/1.jpg"),
@@ -12,7 +13,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Anti-Blue/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Anti-Blue/6.jpg"),
     ],
-    advantages: `<ul>
+    advantages: `<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li>Покриття Enjoy Warm Colors</li>
 <li>Функція Self Healing.</li>
@@ -35,7 +36,7 @@ const ownbrandData = [
 <p><strong>Рекомендується встановлення у кваліфікованого спеціаліста!</strong></p>
 <p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
 <p><strong>Особливості:</strong></p>
-<ul>
+<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li>Покриття Enjoy Warm Colors</li>
 <li>Функція Self Healing.</li>
@@ -60,7 +61,8 @@ const ownbrandData = [
   {
     id: "ob2",
     title: "Захисні плівки серіїї Anti-Spy",
-    categoryLink: "",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
     imgs: [
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/1.jpg"),
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/2.jpg"),
@@ -69,7 +71,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/6.jpg"),
     ],
-    advantages: `<ul>
+    advantages: `<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li><strong>Privacy Effect</strong></li>
 <li>Функція Self Healing.</li>
@@ -91,7 +93,7 @@ const ownbrandData = [
 <p><strong>Рекомендоване встановлення у кваліфікованого фахівця!</strong></p>
 <p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
 <p><strong>Особливості:</strong></p>
-<ul>
+<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li><strong>Privacy Effect</strong></li>
 <li>Функція Self Healing.</li>
@@ -115,7 +117,8 @@ const ownbrandData = [
   {
     id: "ob3",
     title: "Захисні плівки серіїї Classic",
-    categoryLink: "",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
     imgs: [
       require("../images/own-brands/mobile-screen-protection/Classic/1.jpg"),
       require("../images/own-brands/mobile-screen-protection/Classic/2.jpg"),
@@ -123,7 +126,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Classic/4.jpg"),
       require("../images/own-brands/mobile-screen-protection/Classic/5.jpg"),
     ],
-    advantages: `<ul>
+    advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Функція Self Healing.</li>
   <li>Функцію TOUCH ID без перешкод</li>
@@ -143,7 +146,7 @@ const ownbrandData = [
   <p><strong>Рекомендується встановлення у кваліфікованого спеціаліста!</strong></p>
   <p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
   <p><strong>Особливості:</strong></p>
-  <ul>
+  <ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Функція Self Healing.</li>
   <li>Функцію TOUCH ID без перешкод</li>
@@ -168,15 +171,16 @@ const ownbrandData = [
   {
     id: "ob4",
     title: "Захисні плівки серіїї Matte",
-    categoryLink: "",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
     imgs: [
-      require("../images/own-brands/mobile-screen-protection/Classic/1.jpg"),
-      require("../images/own-brands/mobile-screen-protection/Classic/2.jpg"),
-      require("../images/own-brands/mobile-screen-protection/Classic/3.jpg"),
-      require("../images/own-brands/mobile-screen-protection/Classic/4.jpg"),
-      require("../images/own-brands/mobile-screen-protection/Classic/5.jpg"),
+      require("../images/own-brands/mobile-screen-protection/Matte/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/Matte/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/Matte/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/Matte/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/Matte/5.jpg"),
     ],
-    advantages: `<ul>
+    advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
   <li>Функція Self Healing.</li>
@@ -197,7 +201,7 @@ const ownbrandData = [
   <p><strong>Рекомендоване встановлення у кваліфікованого фахівця!</strong></p>
   <p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
   <p><strong>Особливості:</strong></p>
-  <ul>
+  <ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
   <li>Функція Self Healing.</li>
@@ -223,7 +227,8 @@ const ownbrandData = [
   {
     id: "ob5",
     title: "Захисні плівки серіїї Supreme",
-    categoryLink: "",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
     imgs: [
       require("../images/own-brands/mobile-screen-protection/Supreme/1.jpg"),
       require("../images/own-brands/mobile-screen-protection/Supreme/2.jpg"),
@@ -232,7 +237,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Supreme/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Supreme/6.jpg"),
     ],
-    advantages: `<ul>
+    advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
   <li>Функція Self Healing.</li>
@@ -253,7 +258,7 @@ const ownbrandData = [
   <p><strong>Рекомендоване встановлення у кваліфікованого фахівця!</strong></p>
   <p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
   <p><strong>Особливості:</strong></p>
-  <ul>
+  <ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
   <li>Функція Self Healing.</li>

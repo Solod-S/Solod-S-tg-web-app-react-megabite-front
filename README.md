@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+![Version](https://img.shields.io/badge/Version-1.0-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![runs with react](https://img.shields.io/badge/Runs%20with%20React-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=61DAFB)](https://uk.legacy.reactjs.org/)
+[![runs with router dom](https://img.shields.io/badge/Runs%20with%20React_Router_Dom-000.svg?style=flat-square&logo=reactrouter&labelColor=f3f3f3&logoColor=#CA4245)](https://reactrouter.com/en/main)
+[![runs with redux](https://img.shields.io/badge/Runs%20with%20Redux-000.svg?style=flat-square&logo=Redux&labelColor=f3f3f3&logoColor=7247B5)](https://redux.js.org/)
+[![runs with styledcomponents](https://img.shields.io/badge/Runs%20with%20Styled_Components-000.svg?style=flat-square&logo=styledcomponents&labelColor=f3f3f3&logoColor=#DB7093)](https://styled-components.com/)
+[![runs with axios](https://img.shields.io/badge/Runs%20with%20MockAPI-000.svg?style=flat-square&logo=axios&labelColor=f3f3f3&logoColor=5A29E4)](https://axios-http.com/ru/docs/intro)
+[![runs with mockAPI](https://img.shields.io/badge/Runs%20with%20MockAPI-000.svg?style=flat-square&logo=cockroachlabs&labelColor=f3f3f3&logoColor=2A2A2A)](https://redux.js.org/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MegabiteWebApp
 
-## Available Scripts
+**_Built using React JS, React Router DOM, Redux, Redux-Thunks, Axios,
+Styled-system & Styled-Components_**.
 
-In the project directory, you can run:
+![WebStudio Demo](/public/web1-min.jpg)
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is a web application designed for an online store, serving as a Telegram bot. It utilizes various technologies to provide users with an interactive and informative experience. The main objective of the application is to present users with current promotions, products from the store's own brand, offer a contact form, contact information, and working hours.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React: A JavaScript library used for building the user interface of the web application.
+- react-router-dom: Enables navigation and routing within the application, allowing users to switch between different views.
+- Redux: A state management library that helps manage the application's global state.
+- react-redux: Connects the Redux store to the React application and provides access to state and actions.
+- redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
+- axios: A library for making HTTP requests to fetch data from the server or external APIs.
+- styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
+- styled-system: A utility library for creating consistent and responsive design systems.
+- react-image-gallery: A component used to display a gallery of images, likely showcasing products and promotions.
+- react-icons: Provides a collection of icons for use in the user interface.
+- react-loader-spinner: Displays a loading spinner, enhancing user experience during data fetching.
+- react-modal: Creates modal dialogs for displaying additional content or forms.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Overview
 
-### `npm run build`
+The web application serves as an extension of the online store's capabilities, accessible through a Telegram bot. Its primary purpose is to engage users with the store's offerings and services. Key features include:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Promotions: Users can view current promotions and special offers, enticing them to explore the store further.
+- Products: The application showcases products under the store's own brand, allowing users to browse and learn more about them.
+- Contact Form: Users can submit inquiries and messages to the store through a contact form, enhancing communication.
+- Contact Information: The application provides essential contact details, making it easy for users to reach out.
+- Working Hours: Users can access the store's working hours, ensuring they have up-to-date information.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+By leveraging the technologies listed, the project creates a seamless and visually appealing experience for users, promoting the store's products and services while facilitating communication and engagement.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## The Tech Stack:
 
-### `npm run eject`
+    react
+    react-dom
+    react-router-dom
+    redux
+    react-redux
+    redux-persist
+    axios
+    styled-components
+    styled-system
+    react-image-gallery
+    react-icons
+    react-loader-spinner
+    react-modal
+    react-toastify
+    yup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Using Git (recommended)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  Clone the project from github. Change "myproject" to your project name.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/Solod-S/webstudio-react.git ./myproject
+```
 
-## Learn More
+### Using manual download ZIP
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1.  Download repository
+2.  Uncompress to your desired directory
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install npm dependencies after installing (Git or manual download)
 
-### Code Splitting
+```bash
+cd myproject
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Plans
 
-### Analyzing the Bundle Size
+- Add animation
+- Add video player
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! If you have any suggestions or improvements, please
+create a pull request. For major changes, please open an issue first to discuss
+the changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**_NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY
+SUGGESTIONS_**
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- https://www.npmjs.com/package/react-image-gallery -->

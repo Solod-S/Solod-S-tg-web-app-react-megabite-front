@@ -9,6 +9,7 @@ export const LocationSection = styled.section`
 
 export const Wrapper = styled.div`
   background-color: ${(p) => p.theme.colors.primaryBgColor};
+  padding: 15px 0 15px 0;
   margin-bottom: 20px;
 `;
 

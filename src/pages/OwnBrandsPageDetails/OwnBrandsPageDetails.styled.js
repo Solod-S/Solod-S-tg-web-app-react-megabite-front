@@ -50,21 +50,44 @@ export const Title = styled.h2`
 export const Info = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
     width: 1170px;
+    flex-direction: row;
   }
 `;
 
 export const ImgWrapper = styled.div`
-  min-width: 300px;
+  /* min-width: 300px; */
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
-  margin-bottom: 20px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+`;
+
+export const BuyBtn = styled.a`
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-size: ${(p) => p.theme.fontSizes.xs};
+  background-color: ${(p) => p.theme.colors.primaryAccentColor};
+  text-align: center;
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: ${(p) => p.theme.colors.thrdBgColor};
+    opacity: 1;
   }
 `;
 
@@ -96,8 +119,13 @@ export const Text = styled.p`
 `;
 
 export const DescriptionWrapper = styled.div`
+  /* list-style: inside; */
   font-size: 18px;
   /* Стили по умолчанию для всех дочерних элементов */
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
   & > * {
     margin-bottom: 10px;
   }

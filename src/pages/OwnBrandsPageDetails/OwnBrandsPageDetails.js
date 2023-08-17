@@ -1,14 +1,15 @@
 import { useParams } from "react-router-dom";
 import ownbrandData from "../../data/ownbrandData";
 
-import { BackBtn, OwnBrandDetailsList } from "../../components";
+import { BackBtn, OwnBrandDetailsList, ImageSlider } from "../../components";
 import {
   Main,
   Section,
   Title,
   Info,
   ImgWrapper,
-  Image,
+  BuyBtn,
+  // Image,
   DescriptionWrapper,
 } from "./OwnBrandsPageDetails.styled";
 
@@ -31,9 +32,19 @@ function OwnBrandsPageDetails() {
         <BackBtn location="/own-brand" />
         <Section>
           <Title>{portfolioItem.title}</Title>
+
           <Info>
             <ImgWrapper>
-              <Image src={portfolioItem.imgs[0]} alt={portfolioItem.title} />
+              <ImageSlider slides={portfolioItem.imgs} />
+
+              {/* <Image src={portfolioItem.imgs[0]} alt={portfolioItem.title} /> */}
+              <BuyBtn
+                href={portfolioItem.categoryLink}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Замовити на сайті
+              </BuyBtn>
             </ImgWrapper>
             <DescriptionWrapper
               dangerouslySetInnerHTML={{

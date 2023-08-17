@@ -10,6 +10,8 @@ import Location from "./Location/Location";
 import ModalWindow from "./ModalWindow/ModalWindow";
 import OrderForm from "./OrderForm/OrderForm";
 import OwnBrandDetailsList from "./OwnBrandDetailsList.js/OwnBrandDetailsList";
+import ImageSlider from "./ImageSlider/ImageSlider";
+import SimpleSlider from "./SimpleSlider/SimpleSlider";
 
 export {
   AppBar,
@@ -23,4 +25,6 @@ export {
   OrderForm,
   OwnBrandDetailsList,
   MenuItem,
+  ImageSlider,
+  SimpleSlider,
 };

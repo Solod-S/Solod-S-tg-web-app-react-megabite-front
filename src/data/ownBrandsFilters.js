@@ -9,5 +9,10 @@ const ownBrandsFilters = [
     filter: "mobile-screen-protection",
     title: "Захист екрану смартфону",
   },
+  {
+    id: "pf2",
+    filter: "tablet-screen-protection",
+    title: "Захист екрану планшету",
+  },
 ];
 export default ownBrandsFilters;

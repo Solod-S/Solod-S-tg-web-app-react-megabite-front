@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import {
   Item,
   Link,
@@ -10,12 +11,15 @@ import {
   Text,
 } from "./MenuItem.styled";
 
-function MenuItem({ itemProps, location }) {
+import { scrollToTop } from "../../utils";
+
+function MenuItem({ itemProps, location, backLinkHref }) {
+  const currentLocation = useLocation();
   switch (true) {
     case location === "mainMenu":
       return (
         <Item>
-          <Link to={itemProps.filter}>
+          <Link to={itemProps.filter} onClick={scrollToTop}>
             <Wrapper>
               <Poster src={itemProps.img} alt={itemProps.title} width="370" />
 
@@ -33,7 +37,40 @@ function MenuItem({ itemProps, location }) {
     case location === "own-brand":
       return (
         <Item>
-          <Link to={itemProps.id}>
+          <Link
+            to={itemProps.id}
+            onClick={scrollToTop}
+            state={{ from: currentLocation }}
+          >
+            <Wrapper>
+              <Poster
+                src={itemProps.imgs[0]}
+                alt={itemProps.title}
+                width="370"
+              />
+
+              <Overflow>
+                <PosterOverFlow>{itemProps.title}</PosterOverFlow>
+                {/* <PosterOverFlow
+                  dangerouslySetInnerHTML={{ __html: itemProps.advantages }}
+                /> */}
+              </Overflow>
+            </Wrapper>
+            <TextWraper>
+              <Title>{itemProps.title}</Title>
+              <Text>{itemProps.category}</Text>
+            </TextWraper>
+          </Link>
+        </Item>
+      );
+    case location === "own-brand-similar-list":
+      return (
+        <Item>
+          <Link
+            to={`/own-brand/${itemProps.id}`}
+            onClick={scrollToTop}
+            state={{ from: backLinkHref }}
+          >
             <Wrapper>
               <Poster
                 src={itemProps.imgs[0]}
@@ -62,6 +99,7 @@ function MenuItem({ itemProps, location }) {
             to={itemProps.url}
             target="_blank"
             rel="noopener noreferrer nofollow"
+            onClick={scrollToTop}
           >
             <Wrapper>
               <Poster

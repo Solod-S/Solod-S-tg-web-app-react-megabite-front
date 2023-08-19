@@ -1,56 +1,57 @@
-import { MenuItem } from "../../components";
+import { MenuItem } from "..";
+import { Autoplay, Pagination } from "swiper/modules";
 
-import Slider from "react-slick";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-function SimpleSlider({ sameTypeList }) {
-  const settings = {
-    dots: false,
-    pauseOnHover: false,
-    autoplay: true,
-    infinite: true,
-    arrows: false,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+const breakpoints = {
+  // When window width is >= 320px
+  240: {
+    slidesPerView: 1,
+  },
+  // When window width is >= 768px
+  768: {
+    slidesPerView: 2,
+  },
+  // When window width is >= 1024px
+  1200: {
+    slidesPerView: 3,
+  },
+};
 
+function SimpleSlider({ sameTypeList, backLinkHref }) {
   return (
-    <Slider {...settings}>
+    <Swiper
+      pagination={{
+        clickable: true,
+      }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay, Pagination]}
+      spaceBetween={50}
+      slidesPerView={3}
+      breakpoints={breakpoints} // Apply breakpoints
+      // onSlideChange={() => console.log("slide change")}
+      // onSwiper={(swiper) => console.log(swiper)}
+    >
       {sameTypeList &&
         sameTypeList.map((item) => (
-          <MenuItem key={item.id} itemProps={item} location={"own-brand"} />
+          <SwiperSlide key={item.id}>
+            <MenuItem
+              itemProps={item}
+              location={"own-brand-similar-list"}
+              backLinkHref={backLinkHref}
+            />
+          </SwiperSlide>
         ))}
-    </Slider>
+    </Swiper>
   );
 }
 

@@ -12,7 +12,7 @@
 **_Built using React JS, React Router DOM, Redux, Redux-Thunks, Axios,
 Styled-system & Styled-Components_**.
 
-![WebStudio Demo](/public/web1-min.jpg)
+![MegaBot Demo](/src//images/about/tg1-min.jpg)
 
 ## Project Description
 
@@ -32,6 +32,8 @@ The project is a web application designed for an online store, serving as a Tele
 - react-icons: Provides a collection of icons for use in the user interface.
 - react-loader-spinner: Displays a loading spinner, enhancing user experience during data fetching.
 - react-modal: Creates modal dialogs for displaying additional content or forms.
+
+![MegaBot Demo](/src//images/about/tg2-min.jpg)
 
 ## Project Overview
 
@@ -70,7 +72,7 @@ By leveraging the technologies listed, the project creates a seamless and visual
 1.  Clone the project from github. Change "myproject" to your project name.
 
 ```bash
-git clone https://github.com/Solod-S/webstudio-react.git ./myproject
+git clone https://github.com/Solod-S/tg-web-app-react-megabite-front.git ./myproject
 ```
 
 ### Using manual download ZIP

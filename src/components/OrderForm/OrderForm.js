@@ -36,7 +36,6 @@ const initialValues = {
 
 function OrderForm({ onClose }) {
   const handleSubmit = async (values, actions) => {
-    console.log(values);
     actions.setSubmitting(false);
     actions.resetForm();
     onClose();

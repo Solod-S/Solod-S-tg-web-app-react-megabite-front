@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import ownbrandData from "../../data/ownbrandData";
 
 import { BackBtn, OwnBrandDetailsList, ImageSlider } from "../../components";
@@ -14,8 +14,11 @@ import {
 } from "./OwnBrandsPageDetails.styled";
 
 function OwnBrandsPageDetails() {
+  const location = useLocation();
   const { ownbrandDataId } = useParams();
+
   const portfolioItem = getPortfolioById(ownbrandDataId);
+  const backLinkHref = location.state?.from ?? "/own-brand";
 
   function getPortfolioById(ownbrandDataId) {
     return ownbrandData.find((item) => item.id === ownbrandDataId);
@@ -29,7 +32,7 @@ function OwnBrandsPageDetails() {
   return (
     <Main>
       <section className="container">
-        <BackBtn location="/own-brand" />
+        <BackBtn location={backLinkHref} />
         <Section>
           <Title>{portfolioItem.title}</Title>
 
@@ -53,8 +56,13 @@ function OwnBrandsPageDetails() {
             />
           </Info>
         </Section>
-        <OwnBrandDetailsList sameTypeList={sameTypeList} />
-        <BackBtn location="/own-brand" />
+        <OwnBrandDetailsList
+          backLinkHref={backLinkHref}
+          sameTypeList={sameTypeList
+            .sort(() => Math.random() - 0.5)
+            .splice(0, 5)}
+        />
+        <BackBtn location={backLinkHref} />
       </section>
     </Main>
   );

@@ -39,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
   /* --breakpointBeeforeDesktop: 1199px; */
   /* --breakpointDesktop: 1200px; */
 }
+
 .--mobile-modificator {
   @media screen and (max-width: ${(p) => p.theme.breakpoints.beeforeTablet}) {
     color: ${(p) => p.theme.colors.primaryAccentColor};
@@ -79,6 +80,7 @@ button {
 }
 
 body {
+  scroll-behavior: smooth;
   margin: 0;
   background-color:  ${(p) => p.theme.colors.primaryWhiteColor};
   color: ${(p) => p.theme.colors.primaryTextColor};

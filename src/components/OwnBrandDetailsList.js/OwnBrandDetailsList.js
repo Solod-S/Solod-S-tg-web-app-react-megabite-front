@@ -1,12 +1,10 @@
-import { MenuItem, SimpleSlider } from "../../components";
+import {
+  // MenuItem,
+  SimpleSlider,
+} from "../../components";
 // import { OwnBrandlsList } from "./OwnBrandDetailsList.styled";
 
-import Slider from "react-slick";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-function OwnBrandDetailsList({ sameTypeList }) {
+function OwnBrandDetailsList({ sameTypeList, backLinkHref }) {
   return (
     <section className="portfolioDetailsList">
       <div className="container">
@@ -20,7 +18,10 @@ function OwnBrandDetailsList({ sameTypeList }) {
           ))} */}
         {/* </OwnBrandlsList> */}
         <div style={{ listStyle: "none" }}>
-          <SimpleSlider sameTypeList={sameTypeList} />
+          <SimpleSlider
+            sameTypeList={sameTypeList}
+            backLinkHref={backLinkHref}
+          />
         </div>
       </div>
     </section>

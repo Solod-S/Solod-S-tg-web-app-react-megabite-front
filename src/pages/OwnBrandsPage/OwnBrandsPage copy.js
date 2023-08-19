@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
-
 import { Menu, BackBtn, Filter } from "../../components";
 import { PortfolioSection, Wrapper } from "./OwnBrandsPage.styled";
-
+import { useSearchParams, useLocation } from "react-router-dom";
 import ownbrandData from "../../data/ownbrandData";
 
 function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
-  const [currentFilter, setCurrentFilter] = useState(null);
+  const [currentFilter, setCurrentFilter] = useSearchParams();
+
+  const searchParamsFilter = currentFilter.get("filter") ?? null;
 
   useEffect(() => {
-    if (currentFilter)
-      setOwnBrands(
-        ownbrandData.filter((item) =>
-          currentFilter !== "all" ? item.filter === currentFilter : item
-        )
-      );
-  }, [currentFilter]);
+    if (!searchParamsFilter) {
+      return;
+    }
+    setOwnBrands(
+      ownbrandData.filter((item) =>
+        searchParamsFilter !== "all" ? item.filter === searchParamsFilter : item
+      )
+    );
+  }, [currentFilter, searchParamsFilter]);
 
   return (
     <PortfolioSection className="section">

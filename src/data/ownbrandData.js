@@ -1,6 +1,7 @@
 const ownbrandData = [
   {
     id: "ob1",
+    rating: 0,
     title: "Захисні плівки серіїї Anti-Blue",
     categoryLink:
       "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
@@ -13,6 +14,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Anti-Blue/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Anti-Blue/6.jpg"),
     ],
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li>Покриття Enjoy Warm Colors</li>
@@ -60,6 +62,7 @@ const ownbrandData = [
   },
   {
     id: "ob2",
+    rating: 0,
     title: "Захисні плівки серіїї Anti-Spy",
     categoryLink:
       "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
@@ -71,6 +74,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Anti-Spy/6.jpg"),
     ],
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li>Високоякісний матеріал.</li>
 <li><strong>Privacy Effect</strong></li>
@@ -116,6 +120,7 @@ const ownbrandData = [
   },
   {
     id: "ob3",
+    rating: 0,
     title: "Захисні плівки серіїї Classic",
     categoryLink:
       "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
@@ -126,6 +131,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Classic/4.jpg"),
       require("../images/own-brands/mobile-screen-protection/Classic/5.jpg"),
     ],
+    video: null,
     advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Функція Self Healing.</li>
@@ -170,6 +176,7 @@ const ownbrandData = [
   },
   {
     id: "ob4",
+    rating: 0,
     title: "Захисні плівки серіїї Matte",
     categoryLink:
       "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
@@ -180,6 +187,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Matte/4.jpg"),
       require("../images/own-brands/mobile-screen-protection/Matte/5.jpg"),
     ],
+    video: null,
     advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
@@ -226,6 +234,7 @@ const ownbrandData = [
   },
   {
     id: "ob5",
+    rating: 0,
     title: "Захисні плівки серіїї Supreme",
     categoryLink:
       "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnaya-plenka/",
@@ -237,6 +246,7 @@ const ownbrandData = [
       require("../images/own-brands/mobile-screen-protection/Supreme/5.jpg"),
       require("../images/own-brands/mobile-screen-protection/Supreme/6.jpg"),
     ],
+    video: null,
     advantages: `<ul style="list-style: inside">
   <li>Високоякісний матеріал.</li>
   <li>Матовий ефект.</li>
@@ -279,6 +289,179 @@ const ownbrandData = [
   <li>Також для другої половини, починаючи з центру, зняти монтажне покриття і шпателем для установки приклеїти плівку.</li>
   <li>Розгладити плівку мікрофіброю та шпателем. Зняти верхнє захисне покриття.</li>
   </ol>
+  `,
+  },
+  {
+    id: "ob6",
+    rating: 0,
+    title: "Захисні плівки серіїї Anti-Spy",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnoe-steklo-i-pokryitie-dlya-planshetov-i-elektronnyih-knig/~5820/",
+    imgs: [
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/1.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/2.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/3.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/4.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/5.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Anti-Blue/6.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li><strong>Privacy Effect</strong></li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Для установки не потрібні додаткові рідини.</li>
+<li>Установку починати зі Starting Line.</li>
+<li>При правильній установці повітряні бульбашки йдуть протягом доби.</li>
+<li>Не призначено для повторної установки.</li>
+</ul>`,
+    category: "Захист екрану планшету",
+    filter: "tablet-screen-protection",
+    description: `<p><strong>Гідрогелева плівка Armorstandart Anti-Spy </strong>- це захисна плівка з підвищеною міцністю і прозорістю, яка надійно захищає дисплей вашого пристрою від пилу, подряпин і потертостей. Плівка виготовлена з високоякісних матеріалів, тому вона більш гладка, ніж звичайні пластикові плівки.</p>
+<p><strong>Privacy Effect</strong></p>
+<p>Зображення на вашому дисплеї стає недоступним під кутом зору більш як 45&deg;.</p>
+<p><strong>Властивість Self Healing</strong></p>
+<p>Відновлення від подряпин і потертостей протягом 24 годин. Відмінні тактильні відчуття та висока чутливість.</p>
+<p><strong>Використовуй функцію TOUCH ID без перешкод</strong> &ndash; тонкий матеріал покриття забезпечує захист екрана та зберігає високу чутливість сенсора та роботу сканера відбитків пальців.</p>
+<p><strong>Рекомендоване встановлення у кваліфікованого фахівця!</strong></p>
+<p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
+<p><strong>Особливості:</strong></p>
+<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li><strong>Privacy Effect</strong></li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Для установки не потрібні додаткові рідини.</li>
+<li>Установку починати зі Starting Line.</li>
+<li>При правильній установці повітряні бульбашки йдуть протягом доби.</li>
+<li>Не призначено для повторної установки.</li>
+</ul>
+<p><strong>Інструкція для самостійного встановлення:</strong></p>
+<ol>
+<li>Знежирити, видалити бруд та розлучення вологою серветкою. Насухо витерти мікрофіброю.</li>
+<li>Зняти висічену плівку із заготовки. Видалити з висівки всі отвори для камер і динаміків (якщо є).</li>
+<li>Додайте плівку, переконайтеся, що вона відцентрована, а вирізи не перекривають динаміки та камери.</li>
+<li>Утримуючи одну половину, зняти з центру монтажне покриття та шпателем для встановлення приклеїти плівку.</li>
+<li>Також для другої половини, починаючи з центру, зняти монтажне покриття і шпателем для установки приклеїти плівку.</li>
+<li>Розгладити плівку мікрофіброю та шпателем. Зняти верхнє захисне покриття.</li>
+</ol>
+  `,
+  },
+  {
+    id: "ob7",
+    rating: 0,
+    title: "Захисні плівки серіїї Classic",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnoe-steklo-i-pokryitie-dlya-planshetov-i-elektronnyih-knig/~5820/",
+    imgs: [
+      require("../images/own-brands/tablets-screen-protection/Classic/1.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Classic/2.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Classic/3.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Classic/4.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Classic/5.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Надійно захищає смартфон.</li>
+<li>Для встановлення не потрібні додаткові рідини.</li>
+<li>Встановлення починати зі Starting Line.</li>
+<li>Під час правильного встановлення повітряні бульбашки зникають упродовж доби.</li>
+<li>Не призначено для повторного встановлення.</li>
+</ul>`,
+    category: "Захист екрану планшету",
+    filter: "tablet-screen-protection",
+    description: `<p><strong>Гідрогелева плівка ArmorStandart</strong> - це захисна плівка з підвищеною міцністю і прозорістю, яка надійно захищає дисплей вашого пристрою від пилу, подряпин і потертостей. Плівка виготовлена з високоякісних матеріалів, тому вона гладкіша, ніж звичайні пластикові плівки.</p>
+<p><strong>Властивість Self Healing</strong></p>
+<p>Відновлення від подряпин і потертостей протягом 24 годин. Відмінні тактильні відчуття та висока чутливість.</p>
+<p><strong>Використовуй функцію TOUCH ID без перешкод</strong> &ndash; тонкий матеріал покриття забезпечує захист екрана та зберігає високу чутливість сенсора та роботу сканера відбитків пальців.</p>
+<p><strong>Рекомендується встановлення у кваліфікованого спеціаліста!</strong></p>
+<p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
+<p><strong>Особливості:</strong></p>
+<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Надійно захищає смартфон.</li>
+<li>Для встановлення не потрібні додаткові рідини.</li>
+<li>Встановлення починати зі Starting Line.</li>
+<li>Під час правильного встановлення повітряні бульбашки зникають упродовж доби.</li>
+<li>Не призначено для повторного встановлення.</li>
+</ul>
+<p><strong>Інструкція для самостійного встановлення:</strong></p>
+<ol>
+<li>Знежирити, видалити бруд та розлучення вологою серветкою. Насухо витерти мікрофіброю.</li>
+<li>Зняти висічену плівку із заготовки. Видалити з висівки всі отвори для камер і динаміків (якщо є).</li>
+<li>Додайте плівку, переконайтеся, що вона відцентрована, а вирізи не перекривають динаміки та камери.</li>
+<li>Утримуючи одну половину, зняти з центру монтажне покриття та шпателем для встановлення приклеїти плівку.</li>
+<li>Також для другої половини, починаючи з центру, зняти монтажне покриття і шпателем для установки приклеїти плівку.</li>
+<li>Розгладити плівку мікрофіброю та шпателем. Зняти верхнє захисне покриття.</li>
+</ol>
+  `,
+  },
+  {
+    id: "ob8",
+    rating: 0,
+    title: "Захисні плівки серіїї Matte",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnoe-steklo-i-pokryitie-dlya-planshetov-i-elektronnyih-knig/~5820/",
+    imgs: [
+      require("../images/own-brands/tablets-screen-protection/Matte/1.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Matte/2.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Matte/3.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Matte/4.jpg"),
+      require("../images/own-brands/tablets-screen-protection/Matte/5.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li>Матовий ефект.</li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Надійно захищає смартфон.</li>
+<li>Для встановлення не потрібні додаткові рідини.</li>
+<li>Встановлення починати зі Starting Line.</li>
+<li>Під час правильного встановлення повітряні бульбашки зникають упродовж доби.</li>
+<li>Не призначено для повторного встановлення.</li>
+</ul>`,
+    category: "Захист екрану планшету",
+    filter: "tablet-screen-protection",
+    description: `<p><strong>Гідрогелева плівка ArmorStandart Matte</strong> - це захисна плівка з підвищеною міцністю і прозорістю з матовим ефектом, яка надійно захищає дисплей вашого пристрою від пилу, подряпин і потертостей. Плівка виготовлена з високоякісних матеріалів, тому вона гладкіша, ніж звичайні пластикові плівки.</p>
+<p><strong>Властивість Self Healing</strong></p>
+<p>Відновлення від подряпин і потертостей протягом 24 годин. Відмінні тактильні відчуття та висока чутливість.</p>
+<p><strong>Використовуй функцію TOUCH ID без перешкод</strong> &ndash; тонкий матеріал покриття забезпечує захист екрана та зберігає високу чутливість сенсора та роботу сканера відбитків пальців.</p>
+<p><strong>Рекомендоване встановлення у кваліфікованого фахівця!</strong></p>
+<p><strong>Для самостійної установки рекомендується ознайомитися</strong> з текстовою інструкцією нижче.</p>
+<p><strong>Особливості:</strong></p>
+<ul style="list-style: inside">
+<li>Високоякісний матеріал.</li>
+<li>Матовий ефект.</li>
+<li>Функція Self Healing.</li>
+<li>Функцію TOUCH ID без перешкод</li>
+<li>Не впливає на яскравість і чіткість зображення.</li>
+<li>Надійно захищає смартфон.</li>
+<li>Для встановлення не потрібні додаткові рідини.</li>
+<li>Встановлення починати зі Starting Line.</li>
+<li>Під час правильного встановлення повітряні бульбашки зникають упродовж доби.</li>
+<li>Не призначено для повторного встановлення.</li>
+</ul>
+<p><strong>Інструкція для самостійного встановлення:</strong></p>
+<ol>
+<li>Знежирити, видалити бруд та розлучення вологою серветкою. Насухо витерти мікрофіброю.</li>
+<li>Зняти висічену плівку із заготовки. Видалити з висівки всі отвори для камер і динаміків (якщо є).</li>
+<li>Додайте плівку, переконайтеся, що вона відцентрована, а вирізи не перекривають динаміки та камери.</li>
+<li>Утримуючи одну половину, зняти з центру монтажне покриття та шпателем для встановлення приклеїти плівку.</li>
+<li>Також для другої половини, починаючи з центру, зняти монтажне покриття і шпателем для установки приклеїти плівку.</li>
+<li>Розгладити плівку мікрофіброю та шпателем. Зняти верхнє захисне покриття.</li>
+</ol>
   `,
   },
 ];

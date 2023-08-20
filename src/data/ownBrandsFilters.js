@@ -14,5 +14,11 @@ const ownBrandsFilters = [
     filter: "tablet-screen-protection",
     title: "Захист екрану планшету",
   },
+  {
+    id: "pf3",
+    filter: "phone-protection",
+    title: "Захист телефону",
+  },
 ];
+
 export default ownBrandsFilters;

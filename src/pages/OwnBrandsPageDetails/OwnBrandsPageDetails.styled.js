@@ -48,13 +48,15 @@ export const Title = styled.h2`
 `;
 
 export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   @media screen and (min-width: 1200px) {
     width: 1170px;
-    flex-direction: row;
+    flex-direction: column;
   }
 `;
 
@@ -82,6 +84,7 @@ export const BuyBtn = styled.a`
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

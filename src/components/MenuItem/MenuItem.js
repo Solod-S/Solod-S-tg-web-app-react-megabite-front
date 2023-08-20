@@ -6,6 +6,7 @@ import {
   Poster,
   Overflow,
   PosterOverFlow,
+  PosterImgOverFlow,
   TextWraper,
   Title,
   Text,
@@ -50,10 +51,11 @@ function MenuItem({ itemProps, location, backLinkHref }) {
               />
 
               <Overflow>
-                <PosterOverFlow>{itemProps.title}</PosterOverFlow>
-                {/* <PosterOverFlow
-                  dangerouslySetInnerHTML={{ __html: itemProps.advantages }}
-                /> */}
+                <PosterImgOverFlow
+                  src={
+                    itemProps.imgs[1] ? itemProps.imgs[1] : itemProps.imgs[0]
+                  }
+                />
               </Overflow>
             </Wrapper>
             <TextWraper>

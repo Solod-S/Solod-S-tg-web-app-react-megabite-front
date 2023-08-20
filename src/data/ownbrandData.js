@@ -464,6 +464,102 @@ const ownbrandData = [
 </ol>
   `,
   },
+  {
+    id: "ob9",
+    rating: 0,
+    title: "Захисні чохли серіїї Icon2",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/icon2/1.jpg"),
+      require("../images/own-brands/phone-case/icon2/2.jpg"),
+      require("../images/own-brands/phone-case/icon2/3.jpg"),
+      require("../images/own-brands/phone-case/icon2/4.jpg"),
+      require("../images/own-brands/phone-case/icon2/5.jpg"),
+      require("../images/own-brands/phone-case/icon2/6.jpg"),
+      require("../images/own-brands/phone-case/icon2/7.jpg"),
+      require("../images/own-brands/phone-case/icon2/8.jpg"),
+      require("../images/own-brands/phone-case/icon2/9.jpg"),
+    ],
+    video: require("../video/own-brands/phone-case/icon2/icon2.mov"),
+    advantages: `<ul style="list-style: inside">
+  <li>Преміальні матеріали чохла &ndash; Liquid silicone, з Soft Touch покриттям;</li>
+  <li>М'яка підкладка із мікрофібри;</li>
+  <li>Передбачені усі функціональні вирізи;</li>
+  <li>Захист від бруду, пилу та потертостей;</li>
+  <li>Виступає над поверхнею дисплея;</li>
+  <li>Пластикова рамка над задньою камерою;</li>
+  <li>Сумісний з усіма видами захисного скла та плівок;</li>
+  <li>Надійно захищає від пошкоджень;</li>
+  <li>Довговічність під час експлуатації;</li>
+  <li>Матова поверхня;</li>
+  <li>Антистатик ефект;</li>
+  <li>Простий в очищенні;</li>
+  <li>Яскравий колір аксесуарів.</li>
+  </ul>`,
+    category: "Захист телефону",
+    filter: "phone-protection",
+    description: `<p><strong>Нові покращені чохли ICON Case для Apple iPhone!</strong></p>
+  <p><strong>Панель ArmorStandart ICON Case для Apple iPhone</strong> - стане яскравим доповненням до вашого смартфону. На матовій поверхні корпусу не залишаються відбитки пальців, і зовнішній вигляд чохла з часом залишиться тим самим.</p>
+  <p><strong>Високоякісні матеріали:</strong></p>
+  <p>При виготовленні чохла використовувалися преміальні матеріали &ndash; Liquid silicone, з Soft Touch покриттям. М'яка підкладка з преміальної мікрофібри надійно захистить ваш гаджет від подряпин, бруду та пилу. Чохол має ребра жорсткості, таким чином телефон захищений з усіх боків. Додатковою перевагою є наявність виступаючих бортів над дисплеєм та наявність додаткової пластикової рамки над задньою камерою для додаткового захисту. У панелі передбачені всі необхідні вирізи та кнопки. Також аксесуар не заважає використанню портів та інтерфейсів пристрою.</p>
+  <p><strong>Дизайн та зручність:</strong></p>
+  <p>Чохол виділяється топовим дизайном і дуже приємний на дотик. Всі вирізи та шви виробу виконані дуже акуратно. Завдяки матовій поверхні аксесуар приємно лежить у руці та не вислизає у процесі експлуатації. Чохол має антистатик ефект і простий в очищенні. Однією з переваг є сумісний з усіма видами захисного скла та плівок.</p>
+  <p><strong>&nbsp;</strong></p>
+  <p><strong>Особливості:</strong></p>
+  <ul style="list-style: inside">
+  <li>Преміальні матеріали чохла &ndash; Liquid silicone, з Soft Touch покриттям;</li>
+  <li>М'яка підкладка із мікрофібри;</li>
+  <li>Передбачені усі функціональні вирізи;</li>
+  <li>Захист від бруду, пилу та потертостей;</li>
+  <li>Виступає над поверхнею дисплея;</li>
+  <li>Пластикова рамка над задньою камерою;</li>
+  <li>Сумісний з усіма видами захисного скла та плівок;</li>
+  <li>Надійно захищає від пошкоджень;</li>
+  <li>Довговічність під час експлуатації;</li>
+  <li>Матова поверхня;</li>
+  <li>Антистатик ефект;</li>
+  <li>Простий в очищенні;</li>
+  <li>Яскравий колір аксесуарів.</li>
+  </ul>
+    `,
+  },
+  {
+    id: "ob10",
+    rating: 0,
+    title: "Захисні чохли серіїї Icon",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/icon/1.jpg"),
+      require("../images/own-brands/phone-case/icon/2.jpg"),
+      require("../images/own-brands/phone-case/icon/3.jpg"),
+      require("../images/own-brands/phone-case/icon/4.jpg"),
+      require("../images/own-brands/phone-case/icon/5.jpg"),
+    ],
+    video: require("../video/own-brands/phone-case/icon2/icon2.mov"),
+    advantages: `<ul style="list-style: inside">
+<li><span >Високоякісний матеріал</span></li>
+<li><span >Надійно захищає смартфон від пошкоджень</span></li>
+<li><span >М'яка підкладка з мікрофібри</span></li>
+<li><span >Простий в очищенні</span></li>
+<li><span >Виступає над поверхнею дисплея</span></li>
+<li><span >Сумісний з усіма типами захисних стекол</span></li>
+</ul>`,
+    category: "Захист телефону",
+    filter: "phone-protection",
+    description: `<p><b>ArmorStandart Icon</b><span > &mdash; стильний чохол із рідкого силікону, який забезпечить вашому смартфону надійний захист від ударів і падінь. Завдяки м'якій підкладці з мікрофібри чохол щільно прилягає до пристрою й захищає його від потрапляння пилу та подряпин. Спеціальний матеріал не покривається відбитками пальців і дуже простий в очищенні.</span></p>
+<p><b>Комфорт</b></p>
+<p><span >Накладка легко надівається на смартфон завдяки розтягувальним бортикам, які також додатково захищають, виступаючи над поверхнею дисплея й камери. В чохлі передбачені всі необхідні вирізи та кнопки. Він сумісний з усіма типами захисних стекол.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span >Високоякісний матеріал</span></li>
+<li><span >Надійно захищає смартфон від пошкоджень</span></li>
+<li><span >М'яка підкладка з мікрофібри</span></li>
+<li><span >Простий в очищенні</span></li>
+<li><span >Виступає над поверхнею дисплея</span></li>
+<li><span >Сумісний з усіма типами захисних стекол</span></li>
+</ul>
+    `,
+  },
 ];
 
 export default ownbrandData;

@@ -56,12 +56,15 @@ function OwnBrandsPageDetails() {
             />
           </Info>
         </Section>
-        <OwnBrandDetailsList
-          backLinkHref={backLinkHref}
-          sameTypeList={sameTypeList
-            .sort(() => Math.random() - 0.5)
-            .splice(0, 5)}
-        />
+        {sameTypeList.length > 0 && (
+          <OwnBrandDetailsList
+            backLinkHref={backLinkHref}
+            sameTypeList={sameTypeList
+              .sort(() => Math.random() - 0.5)
+              .splice(0, 5)}
+          />
+        )}
+
         <BackBtn location={backLinkHref} />
       </section>
     </Main>

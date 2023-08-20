@@ -36,6 +36,17 @@ export const PosterOverFlow = styled.p`
   }
 `;
 
+export const PosterImgOverFlow = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  /* background: rgba(33, 150, 243, 0.9); */
+  opacity: 1;
+`;
+
 export const TextWraper = styled.div`
   padding-bottom: 20px;
   padding-top: 20px;
@@ -99,6 +110,9 @@ export const Link = styled(NavLink)`
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   :hover ${PosterOverFlow} {
+    transform: translateY(0%);
+  }
+  :hover ${PosterImgOverFlow} {
     transform: translateY(0%);
   }
 

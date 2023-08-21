@@ -15,8 +15,7 @@ function OwnBrandsPage() {
   const [currentSlice, setcurrentSlice] = useState([0, 1]);
   const history = useNavigate();
   const { search } = useLocation();
-
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
   const perPage = 1;
@@ -27,10 +26,6 @@ function OwnBrandsPage() {
   };
 
   useEffect(() => {
-    setTotal(ownBrands.length);
-  }, [ownBrands]);
-
-  useEffect(() => {
     if (pageNumber <= 0 || pageNumber > total) {
       setPageNumber(1);
     }
@@ -38,6 +33,26 @@ function OwnBrandsPage() {
     if (total / perPage === page - 1) {
       setPageNumber(total / perPage);
     }
+
+    history(`?page=${pageNumber}`);
+    setcurrentSlice([pageNumber * perPage - 1, pageNumber * perPage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [history, pageNumber, total]);
+
+  useEffect(() => {
+    setTotal(ownBrands.length);
+  }, [ownBrands]);
+
+  useEffect(() => {
+    if (pageNumber <= 0) {
+      setPageNumber(1);
+    }
+
+    if (total / perPage === page - 1) {
+      setPageNumber(total / perPage);
+    }
+
+    // setSearchParams(prevstate => {})
 
     searchParams.set("page", pageNumber);
     currentFilter !== null ?? searchParams.set("filter", currentFilter);

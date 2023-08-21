@@ -1,7 +1,6 @@
 import { Item, Button } from "./FilterItem.styled";
 
 function FilterItem({ filter, title, handleFilter, active }) {
-  console.log(active);
   return (
     <Item>
       <Button

@@ -12,7 +12,6 @@ const dealsSlice = createSlice({
         state.isRefreshing = true;
       })
       .addCase(dealsOperations.fetchDeals.fulfilled, (state, { payload }) => {
-        console.log(payload, "payload");
         state.data = payload;
         state.isRefreshing = false;
       })

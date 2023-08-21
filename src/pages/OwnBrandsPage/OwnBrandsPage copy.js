@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { Menu, BackBtn, Filter, Paginator } from "../../components";
 import { scrollToTop } from "../../utils";
@@ -12,14 +12,12 @@ function OwnBrandsPage() {
   const [currentFilter, setCurrentFilter] = useState(null);
 
   const [total, setTotal] = useState(0);
-  const [currentSlice, setcurrentSlice] = useState([0, 1]);
+  const [currentSlice, setcurrentSlice] = useState([0, 6]);
   const history = useNavigate();
   const { search } = useLocation();
-
-  const [searchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
-  const perPage = 1;
+  const perPage = 6;
 
   const handleChange = (event, value) => {
     setPageNumber(value);
@@ -27,11 +25,7 @@ function OwnBrandsPage() {
   };
 
   useEffect(() => {
-    setTotal(ownBrands.length);
-  }, [ownBrands]);
-
-  useEffect(() => {
-    if (pageNumber <= 0 || pageNumber > total) {
+    if (pageNumber <= 0) {
       setPageNumber(1);
     }
 
@@ -39,13 +33,28 @@ function OwnBrandsPage() {
       setPageNumber(total / perPage);
     }
 
-    searchParams.set("page", pageNumber);
-    currentFilter !== null ?? searchParams.set("filter", currentFilter);
-    history(`?${searchParams.toString()}`);
-
-    setcurrentSlice([pageNumber * perPage - 1, pageNumber * perPage]);
+    history(`?page=${pageNumber}`);
+    setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total, currentFilter]);
+  }, [history, pageNumber, total]);
+
+  useEffect(() => {
+    setTotal(ownBrands.length);
+  }, [ownBrands]);
+
+  useEffect(() => {
+    if (pageNumber <= 0) {
+      setPageNumber(1);
+    }
+
+    if (total / perPage === page - 1) {
+      setPageNumber(total / perPage);
+    }
+
+    history(`?page=${pageNumber}`);
+    setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [history, pageNumber, total]);
 
   useEffect(() => {
     if (currentFilter)

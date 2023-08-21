@@ -1,5 +1,5 @@
 import React from "react";
-import { Circles, RotatingSquare } from "react-loader-spinner";
+import { RotatingSquare } from "react-loader-spinner";
 import { LoaderBox } from "./Loader.styled";
 
 function Loader() {

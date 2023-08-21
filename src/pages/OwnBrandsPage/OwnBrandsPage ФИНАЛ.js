@@ -15,8 +15,7 @@ function OwnBrandsPage() {
   const [currentSlice, setcurrentSlice] = useState([0, 1]);
   const history = useNavigate();
   const { search } = useLocation();
-
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
   const perPage = 1;

@@ -8,7 +8,7 @@ import { GlobalStyle } from "./styles/Global.style";
 import { theme } from "./constants/theme";
 import App from "./components/App/App";
 import { persistor, store } from "./redux/store";
-console.log(`s`);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>

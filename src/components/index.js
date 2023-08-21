@@ -13,6 +13,7 @@ import OwnBrandDetailsList from "./OwnBrandDetailsList.js/OwnBrandDetailsList";
 import ImageSlider from "./ImageSlider/ImageSlider";
 import SimpleSlider from "./SimpleSlider/SimpleSlider";
 import Loader from "./Loader/Loader";
+import { Paginator } from "./Paginator/Paginator";
 
 export {
   AppBar,
@@ -29,4 +30,5 @@ export {
   ImageSlider,
   SimpleSlider,
   Loader,
+  Paginator,
 };

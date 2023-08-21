@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { Menu, BackBtn, Filter, Paginator } from "../../components";
 import { scrollToTop } from "../../utils";
@@ -15,8 +15,6 @@ function OwnBrandsPage() {
   const [currentSlice, setcurrentSlice] = useState([0, 1]);
   const history = useNavigate();
   const { search } = useLocation();
-
-  const [searchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
   const perPage = 1;
@@ -38,10 +36,12 @@ function OwnBrandsPage() {
     if (total / perPage === page - 1) {
       setPageNumber(total / perPage);
     }
-
-    searchParams.set("page", pageNumber);
-    currentFilter !== null ?? searchParams.set("filter", currentFilter);
-    history(`?${searchParams.toString()}`);
+    const newSearchParams = new URLSearchParams();
+    newSearchParams.set("page", pageNumber);
+    if (currentFilter !== null) {
+      newSearchParams.set("filter", currentFilter);
+    }
+    history(`?${newSearchParams.toString()}`);
 
     setcurrentSlice([pageNumber * perPage - 1, pageNumber * perPage]);
     // eslint-disable-next-line react-hooks/exhaustive-deps

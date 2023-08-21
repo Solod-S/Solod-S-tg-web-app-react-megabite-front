@@ -4,12 +4,12 @@
 [![runs with router dom](https://img.shields.io/badge/Runs%20with%20React_Router_Dom-000.svg?style=flat-square&logo=reactrouter&labelColor=f3f3f3&logoColor=#CA4245)](https://reactrouter.com/en/main)
 [![runs with redux](https://img.shields.io/badge/Runs%20with%20Redux-000.svg?style=flat-square&logo=Redux&labelColor=f3f3f3&logoColor=7247B5)](https://redux.js.org/)
 [![runs with styledcomponents](https://img.shields.io/badge/Runs%20with%20Styled_Components-000.svg?style=flat-square&logo=styledcomponents&labelColor=f3f3f3&logoColor=#DB7093)](https://styled-components.com/)
-[![runs with axios](https://img.shields.io/badge/Runs%20with%20MockAPI-000.svg?style=flat-square&logo=axios&labelColor=f3f3f3&logoColor=5A29E4)](https://axios-http.com/ru/docs/intro)
-[![runs with mockAPI](https://img.shields.io/badge/Runs%20with%20MockAPI-000.svg?style=flat-square&logo=cockroachlabs&labelColor=f3f3f3&logoColor=2A2A2A)](https://redux.js.org/)
+[![runs with axios](https://img.shields.io/badge/Runs%20with%20Axios-000.svg?style=flat-square&logo=axios&labelColor=f3f3f3&logoColor=5A29E4)](https://axios-http.com/ru/docs/intro)
+[![runs with SheetDB](https://img.shields.io/badge/Runs%20with%20SheetDB-000.svg?style=flat-square&logo=cockroachlabs&labelColor=f3f3f3&logoColor=2A2A2A)](https://sheetdb.io/)
 
 # MegabiteWebApp
 
-**_Built using React JS, React Router DOM, Redux, Redux-Thunks, Axios,
+**_Built using React JS, React Router DOM, Redux, Redux-Thunks, Axios, SheetDB,
 Styled-system & Styled-Components_**.
 
 ![MegaBot Demo](/src//images/about/tg1-min.jpg)
@@ -21,17 +21,19 @@ The project is a web application designed for an online store, serving as a Tele
 ## Technologies Used
 
 - React: A JavaScript library used for building the user interface of the web application.
-- react-router-dom: Enables navigation and routing within the application, allowing users to switch between different views.
+- React-router-dom: Enables navigation and routing within the application, allowing users to switch between different views.
 - Redux: A state management library that helps manage the application's global state.
-- react-redux: Connects the Redux store to the React application and provides access to state and actions.
-- redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
-- axios: A library for making HTTP requests to fetch data from the server or external APIs.
-- styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
-- styled-system: A utility library for creating consistent and responsive design systems.
-- react-image-gallery: A component used to display a gallery of images, likely showcasing products and promotions.
-- react-icons: Provides a collection of icons for use in the user interface.
-- react-loader-spinner: Displays a loading spinner, enhancing user experience during data fetching.
-- react-modal: Creates modal dialogs for displaying additional content or forms.
+- React-redux: Connects the Redux store to the React application and provides access to state and actions.
+- Redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
+- Axios: A library for making HTTP requests to fetch data from the server or external APIs.
+- Styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
+- Styled-system: A utility library for creating consistent and responsive design systems.
+- React-image-gallery: A component used to display a gallery of images, likely showcasing products and promotions.
+- Swiper: A touch-enabled slider library for creating image carousels, sliders, and interactive content.
+- React-icons: Provides a collection of icons for use in the user interface.
+- React-loader-spinner: Displays a loading spinner, enhancing user experience during data fetching.
+- React-modal: Creates modal dialogs for displaying additional content or forms.
+- SheetDB: Used as an Excel table-based database for storing and processing data in this application.
 
 ![MegaBot Demo](/src//images/about/tg2-min.jpg)
 

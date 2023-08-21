@@ -34,5 +34,7 @@ export const Link = styled(NavLink)`
   }
 `;
 
+export const EmptyPlaceholder = styled.p``;
+
 export const PortfolioSection = styled.section``;
 export const Wrapper = styled.div``;

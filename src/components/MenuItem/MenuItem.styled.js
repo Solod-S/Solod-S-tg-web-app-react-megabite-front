@@ -9,7 +9,7 @@ export const Poster = styled.img`
   display: block;
   width: 100%;
   background-color: "black";
-  min-height: 345px;
+  /* min-height: 345px; */
 `;
 export const Overflow = styled.div``;
 

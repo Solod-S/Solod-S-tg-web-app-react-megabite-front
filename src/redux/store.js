@@ -11,8 +11,8 @@ import {
   REGISTER,
 } from "redux-persist";
 
-import dealsSlice from "./slices/deal/dealsSlice";
-import authSlice from "./slices/authSlice/authSlice";
+import dealsSlice from "./deals/dealsSlice";
+import authSlice from "./auth/authSlice";
 
 const authPersistConfig = {
   key: "auth",

@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import * as api from "../../../services/API/DealsApi.js.js";
+import * as api from "../../services/API/DealsApi.js";
 
 export const fetchDeals = createAsyncThunk("deals/", async (_, thunkAPI) => {
   // const state = thunkAPI.getState();
@@ -10,7 +10,7 @@ export const fetchDeals = createAsyncThunk("deals/", async (_, thunkAPI) => {
   // }
   try {
     const data = await api.fetchDeals();
-    return data.result;
+    return data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }

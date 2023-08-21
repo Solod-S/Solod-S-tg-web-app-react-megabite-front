@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import * as dealsOperations from "../deal/dealsOperations";
+import * as dealsOperations from "./dealsOperations";
 
 const initialState = { data: [], isRefreshing: false };
 
@@ -12,6 +12,7 @@ const dealsSlice = createSlice({
         state.isRefreshing = true;
       })
       .addCase(dealsOperations.fetchDeals.fulfilled, (state, { payload }) => {
+        console.log(payload, "payload");
         state.data = payload;
         state.isRefreshing = false;
       })

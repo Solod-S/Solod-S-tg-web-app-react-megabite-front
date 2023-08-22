@@ -81,7 +81,7 @@ function MenuItem({ itemProps, location, backLinkHref }) {
               />
 
               <Overflow>
-                <PosterOverFlow>{itemProps.title}</PosterOverFlow>
+                {/* <PosterOverFlow>{itemProps.title}</PosterOverFlow> */}
                 {/* <PosterOverFlow
                   dangerouslySetInnerHTML={{ __html: itemProps.advantages }}
                 /> */}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 import { Menu, BackBtn, Filter, Paginator } from "../../components";
 import { scrollToTop } from "../../utils";
@@ -11,10 +11,12 @@ function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
   const [currentFilter, setCurrentFilter] = useState(null);
 
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(null);
   const [currentSlice, setcurrentSlice] = useState([0, 6]);
   const history = useNavigate();
   const { search } = useLocation();
+
+  const [searchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
   const perPage = 6;
@@ -25,36 +27,25 @@ function OwnBrandsPage() {
   };
 
   useEffect(() => {
-    if (pageNumber <= 0) {
-      setPageNumber(1);
-    }
-
-    if (total / perPage === page - 1) {
-      setPageNumber(total / perPage);
-    }
-
-    history(`?page=${pageNumber}`);
-    setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total]);
-
-  useEffect(() => {
     setTotal(ownBrands.length);
   }, [ownBrands]);
 
   useEffect(() => {
-    if (pageNumber <= 0) {
+    console.log(Math.ceil(total / perPage));
+    if (pageNumber <= 0 || pageNumber > Math.ceil(total / perPage)) {
       setPageNumber(1);
     }
 
-    if (total / perPage === page - 1) {
+    if (total / perPage === page - 6) {
       setPageNumber(total / perPage);
     }
 
-    history(`?page=${pageNumber}`);
+    searchParams.set("page", pageNumber);
+    currentFilter !== null ?? searchParams.set("filter", currentFilter);
+    history(`?${searchParams.toString()}`);
+
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total]);
+  }, [history, pageNumber, total, currentFilter, page, searchParams]);
 
   useEffect(() => {
     if (currentFilter)

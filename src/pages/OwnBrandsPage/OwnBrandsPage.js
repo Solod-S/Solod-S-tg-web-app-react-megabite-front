@@ -11,15 +11,15 @@ function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
   const [currentFilter, setCurrentFilter] = useState(null);
 
-  const [total, setTotal] = useState(0);
-  const [currentSlice, setcurrentSlice] = useState([0, 1]);
+  const [total, setTotal] = useState(null);
+  const [currentSlice, setcurrentSlice] = useState([0, 6]);
   const history = useNavigate();
   const { search } = useLocation();
 
   const [searchParams] = useSearchParams();
   const page = search.slice(-1);
   const [pageNumber, setPageNumber] = useState(+page);
-  const perPage = 1;
+  const perPage = 6;
 
   const handleChange = (event, value) => {
     setPageNumber(value);
@@ -31,11 +31,11 @@ function OwnBrandsPage() {
   }, [ownBrands]);
 
   useEffect(() => {
-    if (pageNumber <= 0 || pageNumber > total) {
+    if (pageNumber <= 0 || pageNumber > Math.ceil(ownBrands.length / perPage)) {
       setPageNumber(1);
     }
 
-    if (total / perPage === page - 1) {
+    if (total / perPage === page - 6) {
       setPageNumber(total / perPage);
     }
 
@@ -43,9 +43,8 @@ function OwnBrandsPage() {
     currentFilter !== null ?? searchParams.set("filter", currentFilter);
     history(`?${searchParams.toString()}`);
 
-    setcurrentSlice([pageNumber * perPage - 1, pageNumber * perPage]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total, currentFilter]);
+    setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
+  }, [history, pageNumber, total, currentFilter, page, searchParams]);
 
   useEffect(() => {
     if (currentFilter)

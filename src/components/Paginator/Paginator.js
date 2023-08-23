@@ -1,7 +1,7 @@
-import { Pagination } from '@mui/material';
-import { Wrapper } from './Paginator.styled';
+import { Pagination } from "@mui/material";
+import { Wrapper } from "./Paginator.styled";
 
-export const Paginator = ({ count, page, handleChange }) => {
+const Paginator = ({ count, page, handleChange }) => {
   return (
     <Wrapper>
       <Pagination
@@ -13,3 +13,5 @@ export const Paginator = ({ count, page, handleChange }) => {
     </Wrapper>
   );
 };
+
+export default Paginator;

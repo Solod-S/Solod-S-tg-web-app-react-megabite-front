@@ -44,6 +44,7 @@ function OwnBrandsPage() {
     history(`?${searchParams.toString()}`);
 
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [history, pageNumber, total, currentFilter, page, searchParams]);
 
   useEffect(() => {

@@ -43,5 +43,13 @@ const portfolio = [
     description:
       "Ми створюємо більше ніж просто аксесуари: дізнайтеся нашу місію.",
   },
+  {
+    id: "p5",
+    title: "Форма зворотнього зв'язку",
+    img: require("../images/menu/feedback.jpg"),
+    category: "Form",
+    filter: "form",
+    description: "Ваші думки – наш курс до вдосконалення.",
+  },
 ];
 export default portfolio;

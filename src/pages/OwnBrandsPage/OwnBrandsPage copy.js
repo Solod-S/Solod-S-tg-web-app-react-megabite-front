@@ -31,7 +31,6 @@ function OwnBrandsPage() {
   }, [ownBrands]);
 
   useEffect(() => {
-    console.log(Math.ceil(total / perPage));
     if (pageNumber <= 0 || pageNumber > Math.ceil(total / perPage)) {
       setPageNumber(1);
     }

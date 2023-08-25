@@ -1,13 +1,14 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import SharedLayout from "../SharedLayout/SharedLayout";
+import { SharedLayout } from "../../components";
 import {
   MenuPage,
   DiscountPage,
-  FormPage,
+  TGFormPage,
+  WebFormPage,
   ContactPage,
   OwnBrandsPage,
-  OwnBrandsPageDetails,
+  OwnBrandsDetailsPage,
   RefundPage,
   CompanyAboutPage,
 } from "../../pages";
@@ -22,12 +23,13 @@ function App() {
           <Route path="/own-brand" element={<OwnBrandsPage />} />
           <Route
             path="own-brand/:ownbrandDataId"
-            element={<OwnBrandsPageDetails />}
+            element={<OwnBrandsDetailsPage />}
           />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/refund" element={<RefundPage />} />
           <Route path="/about" element={<CompanyAboutPage />} />
-          <Route path="/form" element={<FormPage />} />
+          <Route path="/tgform" element={<TGFormPage />} />
+          <Route path="/form" element={<WebFormPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

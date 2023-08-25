@@ -3,7 +3,7 @@ import { Suspense } from "react";
 
 import { AppBar, FooterBar } from "../../components";
 import { Box } from "../../components/Box/Box";
-// import Loader from 'components/FooterBar/Loader';
+// import Loader from "../../components";
 
 export default function SharedLayout() {
   return (

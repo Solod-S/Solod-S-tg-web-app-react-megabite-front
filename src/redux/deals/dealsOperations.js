@@ -10,6 +10,9 @@ export const fetchDeals = createAsyncThunk("deals/", async (_, thunkAPI) => {
   // }
   try {
     const data = await api.fetchDeals();
+
+    // const data2 = await api2.fetchForms();
+    // console.log(data2);
     return data;
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);

@@ -23,17 +23,17 @@ The project is a web application designed for an online store, serving as a Tele
 - React: A JavaScript library used for building the user interface of the web application.
 - React-router-dom: Enables navigation and routing within the application, allowing users to switch between different views.
 - Redux: A state management library that helps manage the application's global state.
-- React-redux: Connects the Redux store to the React application and provides access to state and actions.
 - Redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
 - Axios: A library for making HTTP requests to fetch data from the server or external APIs.
+- SheetDB: Used as an Excel table-based database for storing and processing data in this application.
 - Styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
 - Styled-system: A utility library for creating consistent and responsive design systems.
 - React-image-gallery: A component used to display a gallery of images, likely showcasing products and promotions.
 - Swiper: A touch-enabled slider library for creating image carousels, sliders, and interactive content.
+- React-modal: Creates modal dialogs for displaying additional content or forms.
+- React-Toastify: allows to add notifications to your app with ease. No more nonsense!
 - React-icons: Provides a collection of icons for use in the user interface.
 - React-loader-spinner: Displays a loading spinner, enhancing user experience during data fetching.
-- React-modal: Creates modal dialogs for displaying additional content or forms.
-- SheetDB: Used as an Excel table-based database for storing and processing data in this application.
 
 ![MegaBot Demo](/src//images/about/tg2-min.jpg)
 
@@ -88,6 +88,17 @@ git clone https://github.com/Solod-S/tg-web-app-react-megabite-front.git ./mypro
 cd myproject
 npm install
 ```
+
+### Replace values with yours in .env!! Exemple of `.env` file.
+
+```env
+REACT_APP_GOOGLE_FORM_SHEET_DB = SHEET_DB FORM GOOGLE SHEET;
+REACT_APP_GOOGLE_PROMO_SHEET_DB = SHEET_DB PROMO GOOGLE SHEET;
+REACT_APP_GOOGLE_DEALS_SHEET_DB = SHEET_DB DEALS GOOGLE SHEET
+REACT_APP_GOOGLE_SHEET_TOKEN = SHEET_DB GOOGLE SHEET TOKEN;
+```
+
+REACT_APP_GOOGLE_SHEET_TOKEN=e66ldzw5twftdnpxeqnak9qb3ps4xj0m9qi6pz2h
 
 ## Future Plans
 

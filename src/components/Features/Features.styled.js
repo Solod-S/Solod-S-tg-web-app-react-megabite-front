@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import { RiRadarLine } from "react-icons/ri";
-import { BiTimer } from "react-icons/bi";
-import { FaBuromobelexperte, FaSpaceShuttle } from "react-icons/fa";
 
 export const MainTitle = styled.h2`
   color: ${(p) => p.theme.colors.primaryTitleColor};
@@ -45,22 +42,6 @@ export const Item = styled.li`
   @media screen and (min-width: ${(p) => p.theme.breakpoints.desktop}) {
     width: 270px;
   }
-`;
-
-export const RadarIcon = styled(RiRadarLine)`
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-`;
-
-export const TimerIcon = styled(BiTimer)`
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-`;
-
-export const ScheduleIcon = styled(FaBuromobelexperte)`
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-`;
-
-export const SpaceShuttleIcon = styled(FaSpaceShuttle)`
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const DescriptionWrapper = styled.div`

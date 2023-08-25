@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
-
-import { Menu, BackBtn, Filter, Paginator } from "../../components";
 import { scrollToTop } from "../../utils";
-import { PortfolioSection, Wrapper } from "./OwnBrandsPage.styled";
 
 import ownbrandData from "../../data/ownbrandData";
+
+import {
+  Menu,
+  BackBtn,
+  Filter,
+  Paginator,
+  SectionWrapper,
+} from "../../components";
 
 function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
@@ -57,19 +62,17 @@ function OwnBrandsPage() {
   }, [currentFilter]);
 
   return (
-    <PortfolioSection className="section">
-      <Wrapper className="container">
-        <BackBtn location="/" />
-        <Filter setCurrentFilter={setCurrentFilter} />
-        <Menu data={ownBrands.slice(...currentSlice)} location={"own-brand"} />
-        <Paginator
-          count={Math.ceil(total / perPage)}
-          page={pageNumber}
-          handleChange={handleChange}
-        />
-        <BackBtn location="/" />
-      </Wrapper>
-    </PortfolioSection>
+    <SectionWrapper>
+      <BackBtn location="/" />
+      <Filter setCurrentFilter={setCurrentFilter} />
+      <Menu data={ownBrands.slice(...currentSlice)} location={"own-brand"} />
+      <Paginator
+        count={Math.ceil(total / perPage)}
+        page={pageNumber}
+        handleChange={handleChange}
+      />
+      <BackBtn location="/" />
+    </SectionWrapper>
   );
 }
 

@@ -66,7 +66,7 @@ export const ContactsList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
   @media screen and (max-width: ${(p) => p.theme.breakpoints.beeforeDesktop}) {
     flex-direction: column;
   }

@@ -14,7 +14,6 @@ import {
   // SmartPhoneIcon,
   // MailInIcon,
 } from "./AppBar.styled";
-
 import logoImgFile from "../../images/logo.png";
 
 function AppBar() {

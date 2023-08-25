@@ -1,22 +1,36 @@
-import { axiosInstance } from "./axios";
+import { axiosFormInstance } from "./axios";
+const shortid = require("shortid");
+const { format } = require("date-fns");
 
-export const fetchDeals = () => {
-  return axiosInstance.get().then(({ data }) => {
+export const fetchForms = () => {
+  return axiosFormInstance.get().then(({ data }) => {
     return data;
   });
-
-  // fetch("https://sheetdb.io/api/v1/uaugppgpmtycv")
-  //   .then((response) => response.json())
-  //   .then((data) => console.log(data));
-
-  // return [];
 };
 
-export const deleteDeal = (id) => {
-  return [];
+export const addForm = ({ subject, name, email, comment }) => {
+  const id = shortid.generate();
+  const currentDate = new Date();
+  const date = format(currentDate, "dd.MM.yyyy");
+  const time = format(currentDate, "HH:mm");
+
+  const preparedData = {
+    id,
+    subject,
+    name,
+    email,
+    comment,
+    date,
+    time,
+    TelegramId: "-",
+    TelegramUsername: "-",
+  };
+  return axiosFormInstance.post("", preparedData).then(({ data }) => {
+    return data;
+  });
 };
 
-export const addDeal = (id) => {
+export const deleteForm = (id) => {
   return [];
 };
 

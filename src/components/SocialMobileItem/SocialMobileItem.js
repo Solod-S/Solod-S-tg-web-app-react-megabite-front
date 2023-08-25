@@ -1,4 +1,4 @@
-import { SocialMobileLink } from './SocialMobileItem.styled';
+import { SocialMobileLink } from "./SocialMobileItem.styled";
 
 function SocialMobileEl({ link, title }) {
   return (

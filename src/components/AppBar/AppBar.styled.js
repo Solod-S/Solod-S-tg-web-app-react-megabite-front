@@ -199,7 +199,7 @@ export const ContactItem = styled.li`
   @media screen and (min-width: ${(p) => p.theme.breakpoints.desktop}) {
     position: relative;
     :not(:last-child) {
-      margin-right: 50px;
+      margin-right: 30px;
     }
   }
 `;

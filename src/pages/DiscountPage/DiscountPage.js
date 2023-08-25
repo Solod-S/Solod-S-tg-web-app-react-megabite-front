@@ -1,19 +1,13 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { Menu, BackBtn, Loader } from "../../components";
+import { Menu, BackBtn, Loader, SectionWrapper } from "../../components";
 
 import {
   getDeals,
   getDealsRefreshStatus,
 } from "../../redux/deals/dealsSelectors.js";
 import { fetchDeals } from "../../redux/deals/dealsOperations";
-
-import {
-  PortfolioSection,
-  Wrapper,
-  EmptyPlaceholder,
-} from "./DiscountPage.styled";
 
 // import discountData from "../../data/discountData";
 
@@ -22,17 +16,17 @@ function DiscountPage() {
   const storageFavorite = useSelector(getDeals);
   const isRefreshing = useSelector(getDealsRefreshStatus);
 
-  const [recipes, setRecipes] = useState([]);
+  const [deals, setDeals] = useState([]);
   const [isLoading, setisLoading] = useState(true);
 
   useEffect(() => {
     dispatch(fetchDeals());
-    setRecipes(storageFavorite);
+    setDeals(storageFavorite);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
 
   useEffect(() => {
-    setRecipes(storageFavorite);
+    setDeals(storageFavorite);
   }, [storageFavorite]);
 
   useEffect(() => {
@@ -40,36 +34,29 @@ function DiscountPage() {
   }, [isRefreshing]);
 
   return (
-    <PortfolioSection className="section">
-      <Wrapper className="container">
-        {isLoading ? (
-          <>
-            <BackBtn location="/" />
-            <Loader />
-          </>
-        ) : (
-          <>
-            {storageFavorite && storageFavorite.length > 0 ? (
-              <>
-                <BackBtn location="/" />
-                <Menu data={recipes} location={"discount"} />
-                <BackBtn location="/" />
-                <PortfolioSection className="section">
-                  <Wrapper className="container"></Wrapper>
-                </PortfolioSection>
-              </>
-            ) : (
-              <>
-                <BackBtn location="/" />
-                <EmptyPlaceholder>
-                  На жаль, на даний момент у нас немає акцій
-                </EmptyPlaceholder>
-              </>
-            )}
-          </>
-        )}
-      </Wrapper>
-    </PortfolioSection>
+    <SectionWrapper>
+      {isLoading ? (
+        <>
+          <BackBtn location="/" />
+          <Loader />
+        </>
+      ) : (
+        <>
+          {storageFavorite && storageFavorite.length > 0 ? (
+            <>
+              <BackBtn location="/" />
+              <Menu data={deals} location={"discount"} />
+              <BackBtn location="/" />
+            </>
+          ) : (
+            <>
+              <BackBtn location="/" />
+              <p>На жаль, на даний момент у нас немає акцій</p>
+            </>
+          )}
+        </>
+      )}
+    </SectionWrapper>
   );
 }
 

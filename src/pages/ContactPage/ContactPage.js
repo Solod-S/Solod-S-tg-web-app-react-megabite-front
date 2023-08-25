@@ -1,16 +1,12 @@
-import { Location, BackBtn } from "../../components";
-
-import { PortfolioSection, Wrapper } from "./ContactPage.styled";
+import { Location, BackBtn, SectionWrapper } from "../../components";
 
 function ContactPage() {
   return (
-    <PortfolioSection className="section">
-      <Wrapper className="container">
-        <BackBtn location="/" />
-        <Location />
-        <BackBtn location="/" />
-      </Wrapper>
-    </PortfolioSection>
+    <SectionWrapper>
+      <BackBtn location="/" />
+      <Location />
+      <BackBtn location="/" />
+    </SectionWrapper>
   );
 }
 

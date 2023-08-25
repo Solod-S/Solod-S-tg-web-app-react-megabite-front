@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSearchParams, useLocation } from "react-router-dom";
 
 import { BtnSet } from "./Filter.styled";
-import FilterItem from "../FilterItem/FilterItem";
+import { FilterItem } from "../../components";
 
 import ownBrandsFilters from "../../data/ownBrandsFilters";
 

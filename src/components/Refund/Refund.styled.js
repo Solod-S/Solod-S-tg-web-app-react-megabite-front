@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainTitle = styled.h2`
+export const MainTitle = styled.h1`
   color: ${(p) => p.theme.colors.primaryTitleColor};
   font-weight: ${(p) => p.theme.fontWeight.bolt};
   line-height: 42px;

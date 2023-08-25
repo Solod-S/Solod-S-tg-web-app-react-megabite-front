@@ -1,16 +1,12 @@
-import { Menu } from "../../components";
-
-import { PortfolioSection, Wrapper } from "./MenuPage.styled";
+import { Menu, SectionWrapper } from "../../components";
 
 import menuData from "../../data/menuData";
 
 function MenuPage() {
   return (
-    <PortfolioSection className="section">
-      <Wrapper className="container">
-        <Menu data={menuData} location={"mainMenu"} />
-      </Wrapper>
-    </PortfolioSection>
+    <SectionWrapper className="container">
+      <Menu data={menuData} location={"mainMenu"} />
+    </SectionWrapper>
   );
 }
 

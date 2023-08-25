@@ -24,7 +24,7 @@ import {
   Error,
 } from "./OrderForm.style";
 
-import orderSchema from "../../schema/order";
+import orderSchema from "../../schema/feedback";
 
 const initialValues = {
   name: "",

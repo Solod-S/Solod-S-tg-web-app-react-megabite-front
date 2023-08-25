@@ -1,5 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
+import { useTelegram } from "../../hooks/useTelegram";
 import {
+  FormikWrapper,
   NameIcon,
   PhoneIcon,
   ThemeIcon,
@@ -11,10 +13,9 @@ import {
   Select,
   TextAreaField,
   TextArea,
-} from "./FormPage.style";
-import { useTelegram } from "../../hooks/useTelegram";
+} from "./TGForm.styled";
 
-function Form() {
+function TGForm() {
   const { tg } = useTelegram();
 
   const [name, setName] = useState("");
@@ -34,7 +35,6 @@ function Form() {
     tg.sendData(JSON.stringify(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [name, number, subject, comment, email]);
-
   useEffect(() => {
     tg.onEvent("mainButtonClicked", onSendData);
 
@@ -80,7 +80,7 @@ function Form() {
   };
 
   return (
-    <div style={{ padding: "20px" }} className={"form"}>
+    <FormikWrapper className={"form"}>
       <Title>Зворотній зв'язок</Title>
       <Wrapper>
         <ThemeIcon size={19} aria-label="Phone icon" />
@@ -122,9 +122,6 @@ function Form() {
         />
       </Wrapper>
       <TextAreaField>
-        {/* <ErrorWrapper>
-          <TextAreaLabel htmlFor="comment">Текст</TextAreaLabel>
-        </ErrorWrapper> */}
         <TextArea
           name="comment"
           rows="5"
@@ -136,8 +133,8 @@ function Form() {
         />
       </TextAreaField>
       <Text>*будь ласка, заповніть усі поля.</Text>
-    </div>
+    </FormikWrapper>
   );
 }
 
-export default Form;
+export default TGForm;

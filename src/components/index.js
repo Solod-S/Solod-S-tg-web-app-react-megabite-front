@@ -21,6 +21,8 @@ import TGForm from "./TGForm/TGForm";
 import WebForm from "./WebForm/WebForm";
 import SectionWrapper from "./SectionWrapper/SectionWrapper";
 import ProductItem from "./ProductItem/ProductItem";
+import Banner from "./Banner/Banner";
+import Hero from "./Hero/Hero";
 
 export {
   AppBar,
@@ -46,4 +48,6 @@ export {
   WebForm,
   SectionWrapper,
   ProductItem,
+  Banner,
+  Hero,
 };

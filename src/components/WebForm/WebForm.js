@@ -1,5 +1,6 @@
 import { Formik } from "formik";
 import { ToastContainer, toast } from "react-toastify";
+import { axiosClodinaryInstance } from "../../services/API/axios";
 import "react-toastify/dist/ReactToastify.css";
 import {
   FormikWrapper,
@@ -23,6 +24,7 @@ import {
 
 import feedbackSchema from "../../schema/feedback";
 import { addForm } from "../../services/API/FormApi";
+import { useRef } from "react";
 
 const initialValues = {
   name: "",
@@ -30,14 +32,53 @@ const initialValues = {
   subject: "Запитання",
   comment: "",
   email: "",
+  file: "",
 };
 
 function WebForm() {
-  const handleSubmit = async (values, actions) => {
-    await addForm(values);
-    notify();
-    actions.setSubmitting(false);
+  const fileInputRef = useRef(null);
+  const handleSubmit = async (
+    { name, number, subject, comment, email, file },
+    actions
+  ) => {
+    console.log(file !== "");
+    if (file !== "") {
+      try {
+        // cloudinaryResponse start
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("upload_preset", "rgnqld0i");
+        const cloudinaryResponse = await axiosClodinaryInstance.post(
+          "",
+          formData
+        );
+        // cloudinaryResponse finish
+
+        await addForm({
+          name,
+          number,
+          subject,
+          comment,
+          email,
+          file: cloudinaryResponse.data.secure_url,
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      await addForm({
+        name,
+        number,
+        subject,
+        comment,
+        email,
+        file,
+      });
+    }
     actions.resetForm();
+    fileInputRef.current.value = "";
+    actions.setSubmitting(false);
+    notify();
   };
 
   const notify = () =>
@@ -49,7 +90,7 @@ function WebForm() {
       initialValues={initialValues}
       onSubmit={handleSubmit}
     >
-      {({ isSubmitting }) => (
+      {({ isSubmitting, setFieldValue }) => (
         <FormikWrapper>
           <Title>Зворотній зв'язок</Title>
           <ForM>
@@ -106,6 +147,34 @@ function WebForm() {
                   placeholder=" "
                 />
                 <MailIcon size={19} aria-label="Mail icon" />
+              </Wrapper>
+            </FormField>
+            <FormField>
+              <ErrorWrapper>
+                <InputLabel htmlFor="file">Файл</InputLabel>
+                <Error name="file" component="div" />
+              </ErrorWrapper>
+              <Wrapper>
+                <input
+                  component="file"
+                  type="file"
+                  name="file"
+                  id="file"
+                  ref={fileInputRef} // Добавляем реф
+                  accept="image/png, image/gif, image/jpeg"
+                  // onChange={(event) =>
+                  //   setFieldValue("file", event.target.files[0])
+                  // }
+                  onChange={(event) => {
+                    const selectedFile = event.target.files[0];
+                    if (selectedFile) {
+                      setFieldValue("file", selectedFile);
+                    } else {
+                      setFieldValue("file", "");
+                    }
+                  }}
+                />
+                {/* <MailIcon size={19} aria-label="Mail icon" /> */}
               </Wrapper>
             </FormField>
             <TextAreaField>

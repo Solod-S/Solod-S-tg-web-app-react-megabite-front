@@ -19,7 +19,7 @@ const breakpoints = {
     slidesPerView: 2,
   },
   // When window width is >= 1024px
-  1200: {
+  1600: {
     slidesPerView: 3,
   },
 };

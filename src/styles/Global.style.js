@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   /* --breakpointBeeforeTablet: 767px; */
   /* --breakpointTablet: 768px; */
   /* --breakpointBeeforeDesktop: 1199px; */
-  /* --breakpointDesktop: 1200px; */
+  /* --breakpointDesktop: 1600px; */
 }
 
 .--mobile-modificator {

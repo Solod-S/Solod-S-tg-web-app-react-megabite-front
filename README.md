@@ -6,6 +6,7 @@
 [![runs with styledcomponents](https://img.shields.io/badge/Runs%20with%20Styled_Components-000.svg?style=flat-square&logo=styledcomponents&labelColor=f3f3f3&logoColor=#DB7093)](https://styled-components.com/)
 [![runs with axios](https://img.shields.io/badge/Runs%20with%20Axios-000.svg?style=flat-square&logo=axios&labelColor=f3f3f3&logoColor=5A29E4)](https://axios-http.com/ru/docs/intro)
 [![runs with SheetDB](https://img.shields.io/badge/Runs%20with%20SheetDB-000.svg?style=flat-square&logo=cockroachlabs&labelColor=f3f3f3&logoColor=2A2A2A)](https://sheetdb.io/)
+[![runs with Cloudinary](https://img.shields.io/badge/Runs%20with%20Cloudinary-000.svg?style=flat-square&logo=cloudways&labelColor=f3f3f3&logoColor=2C39BD)](https://cloudinary.com/)
 
 # MegabiteWebApp
 
@@ -26,6 +27,7 @@ The project is a web application designed for an online store, serving as a Tele
 - Redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
 - Axios: A library for making HTTP requests to fetch data from the server or external APIs.
 - SheetDB: Used as an Excel table-based database for storing and processing data in this application.
+- Cloudinary: allows you to download and store an unlimited number of images privately and securely.
 - Styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
 - Styled-system: A utility library for creating consistent and responsive design systems.
 - React-image-gallery: A component used to display a gallery of images, likely showcasing products and promotions.

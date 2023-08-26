@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-bottom: 30px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-bottom: 45px;
   }
 `;
@@ -18,7 +18,7 @@ export const Info = styled.div`
     display: flex;
     /* flex-direction: column; */
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     width: 1170px;
     flex-direction: column;
   }
@@ -27,7 +27,7 @@ export const Info = styled.div`
 export const ImgWrapper = styled.div`
   /* min-width: 300px; */
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-bottom: 0;
   }
 `;
@@ -63,7 +63,7 @@ export const DescriptionWrapper = styled.div`
   font-size: 18px;
   /* Стили по умолчанию для всех дочерних элементов */
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1600px) {
     margin-left: 30px;
   }
   & > * {

@@ -8,7 +8,7 @@ export const fetchForms = () => {
   });
 };
 
-export const addForm = ({ subject, name, email, comment }) => {
+export const addForm = ({ subject, name, email, comment, file }) => {
   const id = shortid.generate();
   const currentDate = new Date();
   const date = format(currentDate, "dd.MM.yyyy");
@@ -20,10 +20,11 @@ export const addForm = ({ subject, name, email, comment }) => {
     name,
     email,
     comment,
+    file,
     date,
     time,
-    TelegramId: "-",
-    TelegramUsername: "-",
+    TelegramId: "",
+    TelegramUsername: "",
   };
   return axiosFormInstance.post("", preparedData).then(({ data }) => {
     return data;

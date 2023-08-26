@@ -82,6 +82,11 @@ export const Input = styled.input`
   }
 `;
 
+export const FileInput = styled.input`
+  cursor: pointer;
+  margin-bottom: 15px;
+`;
+
 export const Select = styled.select`
   /* margin-top: 0; */
   /* padding-left: 42px; */

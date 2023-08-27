@@ -20,6 +20,7 @@ import {
   Button,
   ErrorWrapper,
   Error,
+  Select,
 } from "./WebForm.styled";
 
 import feedbackSchema from "../../schema/feedback";
@@ -41,7 +42,6 @@ function WebForm() {
     { name, number, subject, comment, email, file },
     actions
   ) => {
-    console.log(file !== "");
     if (file !== "") {
       try {
         // cloudinaryResponse start
@@ -82,7 +82,7 @@ function WebForm() {
   };
 
   const notify = () =>
-    toast("Дякуємо, менеджер вже працює над вашим зверненням");
+    toast.success("Дякуємо, менеджер вже працює над вашим зверненням");
 
   return (
     <Formik
@@ -100,12 +100,12 @@ function WebForm() {
                 <Error name="subject" component="div" />
               </ErrorWrapper>
               <Wrapper>
-                <Input component="select" name="subject" id="subject">
+                <Select component="select" name="subject" id="subject">
                   <option value="Запитання">Запитання</option>
                   <option value="Відгук">Відгук</option>
                   <option value="Повернення">Повернення</option>
                   <option value="Інше">Інше</option>
-                </Input>
+                </Select>
                 <ThemeIcon size={19} aria-label="Theme Icon" />
               </Wrapper>
             </FormField>
@@ -156,25 +156,30 @@ function WebForm() {
               </ErrorWrapper>
               <Wrapper>
                 <input
+                  style={{ width: "100%" }}
                   component="file"
                   type="file"
                   name="file"
                   id="file"
                   ref={fileInputRef} // Добавляем реф
                   accept="image/png, image/gif, image/jpeg"
-                  // onChange={(event) =>
-                  //   setFieldValue("file", event.target.files[0])
-                  // }
                   onChange={(event) => {
                     const selectedFile = event.target.files[0];
                     if (selectedFile) {
-                      setFieldValue("file", selectedFile);
+                      if (selectedFile.size <= 3 * 1024 * 1024) {
+                        // Файл удовлетворяет ограничению размера
+                        setFieldValue("file", selectedFile);
+                      } else {
+                        // Файл слишком большой, даем обратную связь
+                        toast.error("Розмір файлу повинен бути менше 3MB");
+                        event.target.value = ""; // Очищаем поле выбора файла
+                        setFieldValue("file", ""); // Очищаем значение в Formik
+                      }
                     } else {
                       setFieldValue("file", "");
                     }
                   }}
                 />
-                {/* <MailIcon size={19} aria-label="Mail icon" /> */}
               </Wrapper>
             </FormField>
             <TextAreaField>
@@ -198,7 +203,6 @@ function WebForm() {
               Відправити
             </Button>
             <ToastContainer
-              toastStyle={{ backgroundColor: "#2196F3", color: "white" }}
               position="top-center"
               autoClose={2000}
               hideProgressBar={false}

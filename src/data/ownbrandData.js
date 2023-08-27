@@ -480,7 +480,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/icon2/8.jpg"),
       require("../images/own-brands/phone-case/icon2/9.jpg"),
     ],
-    video: require("../video/own-brands/phone-case/icon2/icon2.mov"),
+    video: require("../video/own-brands/phone-case/icon2/icon2.mp4"),
     advantages: `<ul style="list-style: inside">
   <li>Преміальні матеріали чохла &ndash; Liquid silicone, з Soft Touch покриттям;</li>
   <li>М'яка підкладка із мікрофібри;</li>
@@ -535,7 +535,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/icon/4.jpg"),
       require("../images/own-brands/phone-case/icon/5.jpg"),
     ],
-    video: require("../video/own-brands/phone-case/icon2/icon2.mov"),
+    video: require("../video/own-brands/phone-case/icon2/icon2.mp4"),
     advantages: `<ul style="list-style: inside">
 <li><span >Високоякісний матеріал</span></li>
 <li><span >Надійно захищає смартфон від пошкоджень</span></li>

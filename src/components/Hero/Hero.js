@@ -49,7 +49,7 @@ function Hero({ banners }) {
         {banners &&
           banners.map((item, index) => (
             <SwiperSlide key={index}>
-              <Banner video={item.video} />
+              <Banner video={item.video} img={item.img} />
             </SwiperSlide>
           ))}
       </Swiper>

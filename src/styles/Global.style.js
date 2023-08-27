@@ -7,6 +7,8 @@ export const GlobalStyle = createGlobalStyle`
 
 
 :root {
+  --toastify-color-success: #2196f3;
+  --toastify-color-error: #2F303A;
   /* // -------------COLORS-------------- */
 
 

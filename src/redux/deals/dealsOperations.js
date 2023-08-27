@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import * as api from "../../services/API/DealsApi.js";
+import * as api2 from "../../services/API/PapaParseApi.js";
 
 export const fetchDeals = createAsyncThunk("deals/", async (_, thunkAPI) => {
   // const state = thunkAPI.getState();
@@ -9,8 +10,8 @@ export const fetchDeals = createAsyncThunk("deals/", async (_, thunkAPI) => {
   //   return thunkAPI.rejectWithValue();
   // }
   try {
-    const data = await api.fetchDeals();
-
+    // const data = await api.fetchDeals();
+    const data = await api2.fetchProroAndDeals();
     // const data2 = await api2.fetchForms();
     // console.log(data2);
     return data;

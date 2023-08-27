@@ -26,7 +26,7 @@ The project is a web application designed for an online store, serving as a Tele
 - Redux: A state management library that helps manage the application's global state.
 - Redux-persist: Allows the application's state to be persisted and rehydrated across page reloads.
 - Axios: A library for making HTTP requests to fetch data from the server or external APIs.
-- SheetDB: Used as an Excel table-based database for storing and processing data in this application.
+- SheetDB and Papaparse: Used as an Excel table-based database for storing and processing data in this application.
 - Cloudinary: allows you to download and store an unlimited number of images privately and securely.
 - Styled-components: Enables the creation of styled components using tagged template literals in JavaScript.
 - Styled-system: A utility library for creating consistent and responsive design systems.
@@ -60,6 +60,7 @@ By leveraging the technologies listed, the project creates a seamless and visual
     react-redux
     redux-persist
     axios
+    papaparse
     styled-components
     styled-system
     react-image-gallery

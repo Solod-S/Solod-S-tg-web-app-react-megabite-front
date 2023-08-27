@@ -111,7 +111,9 @@ function MenuItem({ itemProps, location, backLinkHref }) {
               />
 
               <Overflow>
-                <PosterOverFlow>{itemProps.description}</PosterOverFlow>
+                <PosterOverFlow>
+                  {`Акція діє до ` + itemProps.date}
+                </PosterOverFlow>
               </Overflow>
             </Wrapper>
             <TextWraper>

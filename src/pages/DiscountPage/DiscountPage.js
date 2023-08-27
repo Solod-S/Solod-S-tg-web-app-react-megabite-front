@@ -21,6 +21,7 @@ function DiscountPage() {
 
   useEffect(() => {
     dispatch(fetchDeals());
+    // dispatch(fetchProroAndDeals());
     setDeals(storageFavorite);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);

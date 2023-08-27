@@ -27,7 +27,7 @@ export const ThemeIcon = styled(BsFillExclamationDiamondFill)`
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(80%, -50%);
+  transform: translate(80%, -90%);
   transition: fill 250ms linear;
 `;
 
@@ -97,6 +97,31 @@ export const Input = styled(Field)`
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: ${(p) => p.theme.radii.normal};
 
+  :focus {
+    outline: 1px solid ${(p) => p.theme.colors.primaryAccentColor};
+  }
+`;
+
+export const Select = styled.select`
+  /* margin-top: 0; */
+  /* padding-left: 42px; */
+  text-indent: 33px;
+  padding-bottom: 8px;
+  padding-top: 12px;
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: ${(p) => p.theme.radii.normal};
+  font-family: ${(p) => p.theme.fontFamily.Roboto};
+  font-style: normal;
+  font-weight: ${(p) => p.theme.fontWeight.normal};
+  font-size: ${(p) => p.theme.fontSizes.xxs};
+  line-height: calc(14 / 22);
+  letter-spacing: 0.01em;
+  /* color: rgba(117, 117, 117, 0.5); */
+  margin-bottom: 15px;
   :focus {
     outline: 1px solid ${(p) => p.theme.colors.primaryAccentColor};
   }

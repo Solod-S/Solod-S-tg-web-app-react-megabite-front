@@ -1,7 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { axiosClodinaryInstance } from "../../services/API/axios";
+import { ToastContainer, toast } from "react-toastify";
 import { Loader } from "../../components";
+import { axiosClodinaryInstance } from "../../services/API/axios";
 import { useTelegram } from "../../hooks/useTelegram";
+
 import {
   FormikWrapper,
   NameIcon,
@@ -17,6 +19,7 @@ import {
   TextAreaField,
   TextArea,
 } from "./TGForm.styled";
+import "react-toastify/dist/ReactToastify.css";
 
 function TGForm() {
   const { tg } = useTelegram();
@@ -117,8 +120,23 @@ function TGForm() {
     setEmail(e.target.value);
   };
   const onChangeFile = (e) => {
-    console.log(e.target.files[0]);
-    setFile(e.target.files[0]);
+    // console.log(e.target.files[0]);
+    // setFile(e.target.files[0]);
+
+    const selectedFile = e.target.files[0];
+    if (selectedFile) {
+      if (selectedFile.size <= 3 * 1024 * 1024) {
+        // Файл удовлетворяет ограничению размера
+        setFile(e.target.files[0]);
+      } else {
+        // Файл слишком большой, даем обратную связь
+        toast.error("Розмір файлу повинен бути менше 3MB");
+        e.target.value = ""; // Очищаем поле выбора файла
+        setFile(null);
+      }
+    } else {
+      setFile(null);
+    }
   };
 
   return (
@@ -193,6 +211,18 @@ function TGForm() {
             />
           </TextAreaField>
           <Text>*будь ласка, заповніть усі поля.</Text>
+          <ToastContainer
+            position="top-center"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            // pauseOnHover
+            theme="colored"
+          />
         </>
       )}
     </FormikWrapper>

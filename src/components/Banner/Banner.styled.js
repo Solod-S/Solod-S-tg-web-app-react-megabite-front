@@ -1,26 +1,26 @@
 import styled from "styled-components";
+// import ReactPlayer from "react-player";
 
 export const BannerWrapper = styled.div`
   position: relative;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-image: ${({ img }) =>
+    img ? `url(${img})` : "none"}; /* Добавляем фоновое изображение */
+  background-size: cover; /* Масштабируем изображение на весь блок */
+  background-repeat: no-repeat; /* Запрещаем повторение изображения */
+  background-position: center; /* Выравниваем изображение по центру */
   :after {
     position: absolute;
-    z-index: ${({ isOpen }) => {
-      if (!isOpen) {
-        return 2;
-      }
-      return 0;
-    }};
-
+    z-index: ${({ isOpen }) => (!isOpen ? 2 : 0)};
     top: 0;
     left: 0;
     content: "";
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba(47, 48, 58, 0.4);
+    background-color: rgba(47, 48, 58, 0.3);
   }
   @media screen and (min-width: ${(p) => p.theme.breakpoints.tablet}) {
     max-width: ${(p) => p.theme.breakpoints.tablet};
@@ -64,6 +64,8 @@ export const Title = styled.h1`
 export const Video = styled.video`
   display: block;
   width: 100%;
+  max-height: 750px;
+  object-fit: fill;
   z-index: ${({ isOpen }) => {
     if (!isOpen) {
       return 1;
@@ -71,6 +73,13 @@ export const Video = styled.video`
     return 0;
   }};
 `;
+
+// export const Video = styled(ReactPlayer)`
+//   display: block;
+//   width: 100%;
+//   max-height: 750px;
+//   object-fit: fill;
+// `;
 
 export const Button = styled.a`
   position: absolute;

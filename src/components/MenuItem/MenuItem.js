@@ -108,6 +108,7 @@ function MenuItem({ itemProps, location, backLinkHref }) {
                 src={itemProps.img}
                 alt={itemProps.description}
                 width="370"
+                height="250px"
               />
 
               <Overflow>

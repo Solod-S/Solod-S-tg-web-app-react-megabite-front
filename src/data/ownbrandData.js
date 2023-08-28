@@ -496,7 +496,7 @@ const ownbrandData = [
   <li>Простий в очищенні;</li>
   <li>Яскравий колір аксесуарів.</li>
   </ul>`,
-    category: "Захист телефону",
+    category: "Чохли для смартфону",
     filter: "phone-protection",
     description: `<p><strong>Нові покращені чохли ICON Case для Apple iPhone!</strong></p>
   <p><strong>Панель ArmorStandart ICON Case для Apple iPhone</strong> - стане яскравим доповненням до вашого смартфону. На матовій поверхні корпусу не залишаються відбитки пальців, і зовнішній вигляд чохла з часом залишиться тим самим.</p>
@@ -544,7 +544,7 @@ const ownbrandData = [
 <li><span >Виступає над поверхнею дисплея</span></li>
 <li><span >Сумісний з усіма типами захисних стекол</span></li>
 </ul>`,
-    category: "Захист телефону",
+    category: "Чохли для смартфону",
     filter: "phone-protection",
     description: `<p><b>ArmorStandart Icon</b><span > &mdash; стильний чохол із рідкого силікону, який забезпечить вашому смартфону надійний захист від ударів і падінь. Завдяки м'якій підкладці з мікрофібри чохол щільно прилягає до пристрою й захищає його від потрапляння пилу та подряпин. Спеціальний матеріал не покривається відбитками пальців і дуже простий в очищенні.</span></p>
 <p><b>Комфорт</b></p>
@@ -559,6 +559,305 @@ const ownbrandData = [
 <li><span >Сумісний з усіма типами захисних стекол</span></li>
 </ul>
     `,
+  },
+  {
+    id: "ob11",
+    rating: 0,
+    title: "Захисні чохли серіїї Air",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/air/1.jpg"),
+      require("../images/own-brands/phone-case/air/2.jpg"),
+      require("../images/own-brands/phone-case/air/3.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li ><span>Легка та приємна на дотик</span></li>
+<li ><span >Надійно захищає від ушкоджень</span></li>
+<li ><span >Виступає над камерою й дисплеєм</span></li>
+<li  ><span >Проста в очищенні</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>ArmorStandart Air Series</b><span > &mdash; це проста і лаконічна панель для смартфона. Вона виготовляється зі щільного гнучкого силікону, який чудово захищає смартфон у разі падінь та інших всіляких пошкоджень, амортизуючи удар.</span></p>
+<p><b>Панель ArmorStandart Air Series</b><span > закриває всі сторони смартфона, а також виступає над камерою й дисплеєм, що робить панель особливо надійною. Панель щільно сидить у руці, не ковзає. Панель дуже просто очищати від забруднень.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li ><span>Легка та приємна на дотик</span></li>
+<li ><span >Надійно захищає від ушкоджень</span></li>
+<li ><span >Виступає над камерою й дисплеєм</span></li>
+<li  ><span >Проста в очищенні</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob12",
+    rating: 0,
+    title: "Захисні чохли серіїї DEF17",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/def17/1.jpg"),
+      require("../images/own-brands/phone-case/def17/2.jpg"),
+      require("../images/own-brands/phone-case/def17/3.jpg"),
+      require("../images/own-brands/phone-case/def17/4.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span >Складається з силіконової та пластикової частин</span></li>
+<li><span >Виступає над дисплеєм та камерою смартфона</span></li>
+<li><span >Виготовлений із матеріалів високої міцності</span></li>
+<li><span >Багатофункціональне кільце-тримач</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Чохол ArmorStandart DEF17 case</b><span > - міцна та надійна захисна панель для смартфона. Оновлена конструкція чохла захистить смартфон більш надійно.</span></p>
+<p><b>Внутрішня частина конструкції</b><span > виготовлена з силікону з ребрами жорсткості для більшого зчеплення з телефоном. Виступаючі борти над дисплеєм і задньою камерою захистять від подряпин.</span></p>
+<p><b>Зовнішня частина конструкції</b><span > складається з міцного пластику найвищої якості та послужить додатковим щитом при падінні гаджета. На задній частині панелі також є кільце-тримач, яке одночасно служить і магнітним авто утримувачем. Кільце обертається на 360 градусів і може бути підставкою для смартфона.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span >Складається з силіконової та пластикової частин</span></li>
+<li><span >Виступає над дисплеєм та камерою смартфона</span></li>
+<li><span >Виготовлений із матеріалів високої міцності</span></li>
+<li><span >Багатофункціональне кільце-тримач</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob13",
+    rating: 0,
+    title: "Захисні чохли серіїї Frosted Matte",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/frosted_matte/1.jpg"),
+      require("../images/own-brands/phone-case/frosted_matte/2.jpg"),
+      require("../images/own-brands/phone-case/frosted_matte/3.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Поєднання сучасних трендів та захисту;</span></li>
+<li><span>Стильний дизайн;</span></li>
+<li><span>Високоякісні матеріали;</span></li>
+<li><span>Використання без обмежень.</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Панель ArmorStandart Frosted Matte</b><span> &ndash; це елегантне поєднання сучасних трендів та захисту!</span></p>
+<p><b>Стильний чохол</b><span> у поєднанні з матовою задньою стінкою та кольоровим бампером однозначно доповнить зовнішній вигляд вашого смартфона.</span></p>
+<p><b>Аксесуар виготовлений із матеріалів високої якості</b><span>, що дозволить забезпечити тривалий термін експлуатації. Матова задня стінка чохла дозволить зберегти зовнішній вигляд смартфона. Чохол має достатню жорсткість.</span><span><br /></span><span>Виконана в одному кольорі рамка основної камери та бампер доповнять гаджет оригінальними елементами.</span></p>
+<p><b>Використання без обмежень:</b><span> виріб має всі необхідні вирізи та точне розташування кнопок.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Поєднання сучасних трендів та захисту;</span></li>
+<li><span>Стильний дизайн;</span></li>
+<li><span>Високоякісні матеріали;</span></li>
+<li><span>Використання без обмежень.</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob14",
+    rating: 0,
+    title: "Захисні чохли серіїї Frosted Unit",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/unit/1.jpg"),
+      require("../images/own-brands/phone-case/unit/2.jpg"),
+      require("../images/own-brands/phone-case/unit/3.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Поєднання сучасних трендів та захисту;</span></li>
+<li><span>Стильний дизайн;</span></li>
+<li><span>Високоякісні матеріали;</span></li>
+<li><span>Користування без обмежень.</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Панель ArmorStandart Unit для Apple iPhone</b><span> - це елегантне поєднання сучасних трендів та захисту!</span></p>
+<p><b>Стильний чохол</b><span> в поєднанні з прозорою задньою стінкою та кольоровим бампером однозначно доповнить зовнішній вигляд вашого смартфона.</span></p>
+<p><b>Аксесуар виготовлений з матеріалів високої якості</b><span>, що дозволить забезпечити тривалий термін експлуатації. Ідеально прозора задня панель чохла дозволить зберегти видимим зовнішній вигляд смартфона та зображеного на ньому логотипу виробника. Вона має достатню жорсткість для захисту смартфона. Виконані в одному кольорі рамка основної камери та бампер доповнять гаджет оригінальними елементами.</span></p>
+<p><b>Користування без обмежень</b><span>: виріб має наявність всіх необхідних вирізів та точне розташування кнопок.</span></p>
+<p><span>На чохлі є захисна плівка, вона захищає його під час транспортування. Її потрібно зняти перед тим, як одягнете чохол на телефон..</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Поєднання сучасних трендів та захисту;</span></li>
+<li><span>Стильний дизайн;</span></li>
+<li><span>Високоякісні матеріали;</span></li>
+<li><span>Користування без обмежень.</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob15",
+    rating: 0,
+    title: "Захисні чохли серіїї Capsule Waterproof Case",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/capsule_waterproof_case/1.jpg"),
+      require("../images/own-brands/phone-case/capsule_waterproof_case/2.jpg"),
+      require("../images/own-brands/phone-case/capsule_waterproof_case/3.jpg"),
+      require("../images/own-brands/phone-case/capsule_waterproof_case/4.jpg"),
+      require("../images/own-brands/phone-case/capsule_waterproof_case/5.jpg"),
+      require("../images/own-brands/phone-case/capsule_waterproof_case/6.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Здатний витримати занурення до 30 метрів під воду, захист IPX8</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Добре передає звук навіть коли телефон всередині</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Сумісність з усіма типами смартфонів до 6.9 дюймів універсальне використання</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Водонепроникний чохол Armorstandart Capsule Waterproof Case</b><span> - відмінно захистить смартфон при занятті екстремальними видами спорту, а також при активному відпочинку на пляжі або на воді. Чохол зроблений з високоякісних і міцних матеріалів, забезпечений міцним замком. Має рівень захисту IPX8, що дозволяє робити фото- або відео- зйомку під водою до 30 метрів. Чохол не впливає на роботу сенсора, ви зможете використовувати телефон не виймаючи його.</span></p>
+<p><b>Capsule Waterproof Case </b><span>досить місткий, що робить його універсальним для всіх типів смартфонів з діагоналлю до 6.9 дюймів. А також чохол не тільки захистить ваш пристрій, а й ключі, гроші, документи або інші важливі дрібні речі.</span></p>
+<p><span>У комплекті з чохлом входить ремінець.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Здатний витримати занурення до 30 метрів під воду, захист IPX8</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Добре передає звук навіть коли телефон всередині</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Сумісність з усіма типами смартфонів до 6.9 дюймів універсальне використання</span></li>
+</ul>
+<p><b>Примітка:</b></p>
+<ul style="list-style: inside">
+<li><span>Водонепроникний чохол не можна використовувати в гарячих джерелах</span></li>
+<li><span>Тримайте якомога далі від гострих предметів</span></li>
+<li><span>Конденсація всередині чохла через вологість повітря - нормальне явище</span></li>
+<li><span>Не рекомендуються при зануренні на глибину понад 30 метрів</span></li>
+<li><span>Зверніть увагу на умови навколишнього середовища при підводному плаванні, щоб не пошкодити чохол</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob16",
+    rating: 0,
+    title: "Захисні чохли серіїї CapsulePro Waterproof Floating Case",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/1.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/2.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/3.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/4.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/5.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/6.jpg"),
+      require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/7.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Має повітряний прошарок</span></li>
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Здатний витримати занурення до 30 метрів під воду, захист IPX8</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Добре передає звук навіть коли телефон всередині</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Сумісність з усіма типами смартфонів до 6.9 дюймів</span></li>
+<li><span>Універсальне використання</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Водонепроникний чохол Armorstandart CapsulePro Waterproof Floating Case</b><span> - відмінно захистить смартфон при занятті екстремальними видами спорту, а так само активний відпочинок на пляжі або на воді. Чохол має інноваційну повітряний прошарок, яка утримає його на воді при падінні і забезпечить коректний відгук сенсора навіть під водою. Бічна частина м'яка і не має стику, що дозволить легко керувати телефоном.</span></p>
+<p><span>Чохол зроблений з високоякісних і міцних матеріалів, забезпечений міцним замком. Має рівень захисту IPX8, що дозволяє робити фото або відео зйомку під водою до 30 метрів.</span></p>
+<p><span>Чохол не впливає на роботу сенсора, ви зможете використовувати телефон не виймаючи його.</span></p>
+<p><b>CapsulePro Waterproof Floating Case </b><span>досить місткий, що робить його універсальним для всіх типів смартфонів з діагоналлю до 6.9 дюймів. А також чохол не тільки захистить ваш пристрій, а й ключі, гроші, документи або інші важливі дрібні речі.</span></p>
+<p><span>У комплекті з чохлом входить ремінець.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Має повітряний прошарок</span></li>
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Здатний витримати занурення до 30 метрів під воду, захист IPX8</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Добре передає звук навіть коли телефон всередині</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Сумісність з усіма типами смартфонів до 6.9 дюймів</span></li>
+<li><span>Універсальне використання</span></li>
+</ul>
+<p><b>Примітка:</b></p>
+<ul style="list-style: inside">
+<li><span>Водонепроникний чохол не можна використовувати в гарячих джерелах</span></li>
+<li><span>Тримайте якомога далі від гострих предметів</span></li>
+<li><span>Конденсація всередині чохла через вологість повітря - нормальне явище</span></li>
+<li><span>Не рекомендуються при зануренні на глибину понад 30 метрів</span></li>
+<li><span>Зверніть увагу на умови навколишнього середовища при підводному плаванні, щоб не пошкодити чохол</span></li>
+</ul>
+    `,
+  },
+  {
+    id: "ob17",
+    rating: 0,
+    title: "Захисні чохли серіїї Waterproof Case",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/phone-case/waterproof_case/1.jpg"),
+      require("../images/own-brands/phone-case/waterproof_case/2.jpg"),
+      require("../images/own-brands/phone-case/waterproof_case/3.jpg"),
+      require("../images/own-brands/phone-case/waterproof_case/4.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Універсальне використання</span></li>
+</ul>`,
+    category: "Чохли для смартфону",
+    filter: "phone-protection",
+    description: `<p><b>Водонепроникний чохол для смартфона Waterproof Case </b><span>чудово захищає смартфон, а також інші речі всередині чохла від потрапляння води. Чохол підходить як для фото/відеозапису під водою, так і для занять екстремальними видами спорту.</span></p>
+<p><span>Ця модель є універсальною й підходить для всіх пристроїв із діагоналлю дисплея до 7 дюймів.</span></p>
+<p><b>Waterproof Case</b><span> використовується не тільки для захисту смартфона від потрапляння води, але й документів, ключів та інших речей.</span></p>
+<p><b>У комплекті</b><span> з чохлом постачається ремінець - чохол можна носити на шиї, не боячись втратити свої цінності.</span></p>
+    <p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Захист від води, бруду, пилу, піску</span></li>
+<li><span>Підходить для активного відпочинку - outdoor activities</span></li>
+<li><span>Надійний замок, легкий, прозорий</span></li>
+<li><span>Не заважає роботі сенсора смартфона</span></li>
+<li><span>Хороша чутність при телефонних дзвінках</span></li>
+<li><span>Універсальне використання</span></li>
+</ul>`,
+  },
+  {
+    id: "ob18",
+    rating: 0,
+    title: "Захисні чохли серіїї Air Case",
+    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    imgs: [
+      require("../images/own-brands/tablet-case/air_case/1.jpg"),
+      require("../images/own-brands/tablet-case/air_case/2.jpg"),
+      require("../images/own-brands/tablet-case/air_case/3.jpg"),
+    ],
+    video: "",
+    advantages: `<ul style="list-style: inside">
+<li><span>Легка та приємна на дотик</span></li>
+<li><span>Надійно захищає від ушкоджень</span></li>
+<li><span>Виступає над камерою й дисплеєм</span></li>
+<li><span>Проста в очищенні</span></li>
+</ul>`,
+    category: "Чохли для планшету",
+    filter: "tablet-protection",
+    description: `<p><b>Чохол ArmorStandart Air Case</b><span> &mdash; це проста і лаконічна панель для планшета. Вона виготовляється зі щільного гнучкого силікону, який чудово захищає планшет у разі падінь та інших всіляких пошкоджень, амортизуючи удар.</span></p>
+<p><b>Чохол ArmorStandart Air Case</b><span> закриває всі сторони планшета, а також виступає над камерою й дисплеєм, що робить панель особливо надійною. Панель щільно сидить у руці, не ковзає. Панель дуже просто очищати від забруднень.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Легка та приємна на дотик</span></li>
+<li><span>Надійно захищає від ушкоджень</span></li>
+<li><span>Виступає над камерою й дисплеєм</span></li>
+<li><span>Проста в очищенні</span></li>
+</ul>`,
   },
 ];
 

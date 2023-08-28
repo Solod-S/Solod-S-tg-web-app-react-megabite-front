@@ -17,7 +17,12 @@ const ownBrandsFilters = [
   {
     id: "pf3",
     filter: "phone-protection",
-    title: "Захист телефону",
+    title: "Чохли для смартфону",
+  },
+  {
+    id: "pf4",
+    filter: "tablet-protection",
+    title: "Чохли для планшету",
   },
 ];
 

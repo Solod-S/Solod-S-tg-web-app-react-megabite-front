@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 export const Wrapper = styled.div`
   margin-bottom: 30px;
@@ -17,10 +18,6 @@ export const Info = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     /* flex-direction: column; */
-  }
-  @media screen and (min-width: 1600px) {
-    width: 1170px;
-    flex-direction: column;
   }
 `;
 
@@ -61,6 +58,7 @@ export const BuyBtn = styled.a`
 export const DescriptionWrapper = styled.div`
   /* list-style: inside; */
   font-size: 18px;
+  margin-bottom: 10px;
   /* Стили по умолчанию для всех дочерних элементов */
 
   @media screen and (min-width: 1600px) {
@@ -74,4 +72,11 @@ export const DescriptionWrapper = styled.div`
   & > *:last-child {
     margin-bottom: 0;
   }
+`;
+
+export const Video = styled(ReactPlayer)`
+  display: block;
+  /* width: 100%;
+  max-height: 100%; */
+  object-fit: fill;
 `;

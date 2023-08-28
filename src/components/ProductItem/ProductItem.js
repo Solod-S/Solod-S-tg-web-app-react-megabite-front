@@ -7,19 +7,19 @@ import {
   BuyBtn,
   // Image,
   DescriptionWrapper,
+  Video,
 } from "./ProductItem.styled";
 
 const ProductItem = ({ portfolioItem }) => {
+  const { title, imgs, categoryLink, description, video } = portfolioItem;
   return (
     <Wrapper>
-      <Title>{portfolioItem.title}</Title>
-
+      <Title>{title}</Title>
       <Info>
         <ImgWrapper>
-          <ImageSlider slides={portfolioItem.imgs} />
-          {/* <Image src={portfolioItem.imgs[0]} alt={portfolioItem.title} /> */}
+          <ImageSlider slides={imgs} />
           <BuyBtn
-            href={portfolioItem.categoryLink}
+            href={categoryLink}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
@@ -28,9 +28,23 @@ const ProductItem = ({ portfolioItem }) => {
         </ImgWrapper>
         <DescriptionWrapper
           dangerouslySetInnerHTML={{
-            __html: portfolioItem.description,
+            __html: description,
           }}
         />
+        {video && (
+          <Video
+            url={video}
+            controls
+            playIcon
+            width="100%"
+            height="100%"
+            style={{
+              display: "block",
+              width: "100%",
+              objectFit: "fill",
+            }}
+          />
+        )}
       </Info>
     </Wrapper>
   );

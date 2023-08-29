@@ -23,6 +23,7 @@ import SectionWrapper from "./SectionWrapper/SectionWrapper";
 import ProductItem from "./ProductItem/ProductItem";
 import Banner from "./Banner/Banner";
 import Hero from "./Hero/Hero";
+import Searchbar from "./SearchBar/SearchBar";
 
 export {
   AppBar,
@@ -50,4 +51,5 @@ export {
   ProductItem,
   Banner,
   Hero,
+  Searchbar,
 };

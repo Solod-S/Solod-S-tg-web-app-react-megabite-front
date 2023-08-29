@@ -1,3 +1,4 @@
-import { scrollToTop } from "./scrollUp";
+import scrollToTop from "./scrollUp";
+import productSearch from "./productSearch";
 
-export { scrollToTop };
+export { scrollToTop, productSearch };

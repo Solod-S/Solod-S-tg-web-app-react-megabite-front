@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const Item = styled.li`
-  :not(:last-child) {
+  /* :not(:last-child) {
     margin-right: 8px;
   }
   @media screen and (max-width: ${(p) => p.theme.breakpoints.beeforeTablet}) {
     margin-right: 8px;
     margin-top: 8px;
-  }
+  } */
+  margin-right: 8px;
+  margin-top: 8px;
 `;
 
 export const Button = styled.button`

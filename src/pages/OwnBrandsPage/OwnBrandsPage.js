@@ -10,11 +10,13 @@ import {
   Filter,
   Paginator,
   SectionWrapper,
+  Searchbar,
 } from "../../components";
 
 function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
   const [currentFilter, setCurrentFilter] = useState(null);
+  const [currentSearchProduct, setCurrentSearchProduct] = useState("");
 
   const [total, setTotal] = useState(null);
   const [currentSlice, setcurrentSlice] = useState([0, 6]);
@@ -30,6 +32,10 @@ function OwnBrandsPage() {
     setPageNumber(value);
     scrollToTop();
   };
+
+  useEffect(() => {
+    console.log(currentSearchProduct);
+  }, [currentSearchProduct]);
 
   useEffect(() => {
     setTotal(ownBrands.length);
@@ -64,6 +70,7 @@ function OwnBrandsPage() {
   return (
     <SectionWrapper>
       <BackBtn location="/" />
+      <Searchbar setCurrentSearchProduct={setCurrentSearchProduct} />
       <Filter setCurrentFilter={setCurrentFilter} />
       <Menu data={ownBrands.slice(...currentSlice)} location={"own-brand"} />
       <Paginator

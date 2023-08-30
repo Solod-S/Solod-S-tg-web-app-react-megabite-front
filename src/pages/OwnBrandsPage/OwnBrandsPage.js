@@ -34,7 +34,14 @@ function OwnBrandsPage() {
   };
 
   useEffect(() => {
-    console.log(currentSearchProduct);
+    if (currentSearchProduct !== "") {
+      const result = ownbrandData.filter((pr) =>
+        pr.title
+          .toLocaleLowerCase()
+          .includes(currentSearchProduct.toLocaleLowerCase())
+      );
+      setOwnBrands(result);
+    }
   }, [currentSearchProduct]);
 
   useEffect(() => {

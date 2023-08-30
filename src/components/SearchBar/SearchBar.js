@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { productSearch } from "../../utils";
+// import { productSearch } from "../../utils";
 import {
   SearchBarForm,
   SearchBarButton,
@@ -26,9 +26,8 @@ function Searchbar({ setCurrentSearchProduct }) {
     if (!currentQuery) {
       return;
     }
-    const result = productSearch(currentQuery);
 
-    setCurrentSearchProduct(result);
+    setCurrentSearchProduct(currentQuery);
   }, [currentQuery, setCurrentSearchProduct]);
 
   return (

@@ -1,12 +1,12 @@
 import { Item, Button } from "./FilterItem.styled";
 
-function FilterItem({ filter, title, handleFilter, active }) {
+function FilterItem({ filter, title, selectFilter, active }) {
   return (
     <Item>
       <Button
         type="button"
         data-filter={filter}
-        onClick={() => handleFilter(filter)}
+        onClick={() => selectFilter(filter)}
         active={active}
       >
         {title}

@@ -570,7 +570,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/air/2.jpg"),
       require("../images/own-brands/phone-case/air/3.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li ><span>Легка та приємна на дотик</span></li>
 <li ><span >Надійно захищає від ушкоджень</span></li>
@@ -601,7 +601,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/def17/3.jpg"),
       require("../images/own-brands/phone-case/def17/4.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span >Складається з силіконової та пластикової частин</span></li>
 <li><span >Виступає над дисплеєм та камерою смартфона</span></li>
@@ -632,7 +632,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/frosted_matte/2.jpg"),
       require("../images/own-brands/phone-case/frosted_matte/3.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Поєднання сучасних трендів та захисту;</span></li>
 <li><span>Стильний дизайн;</span></li>
@@ -664,7 +664,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/unit/2.jpg"),
       require("../images/own-brands/phone-case/unit/3.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Поєднання сучасних трендів та захисту;</span></li>
 <li><span>Стильний дизайн;</span></li>
@@ -700,7 +700,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/capsule_waterproof_case/5.jpg"),
       require("../images/own-brands/phone-case/capsule_waterproof_case/6.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Захист від води, бруду, пилу, піску</span></li>
 <li><span>Підходить для активного відпочинку - outdoor activities</span></li>
@@ -751,7 +751,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/6.jpg"),
       require("../images/own-brands/phone-case/capsule_pro_waterproof_floating_case/7.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Має повітряний прошарок</span></li>
 <li><span>Захист від води, бруду, пилу, піску</span></li>
@@ -805,7 +805,7 @@ const ownbrandData = [
       require("../images/own-brands/phone-case/waterproof_case/3.jpg"),
       require("../images/own-brands/phone-case/waterproof_case/4.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Захист від води, бруду, пилу, піску</span></li>
 <li><span>Підходить для активного відпочинку - outdoor activities</span></li>
@@ -834,13 +834,13 @@ const ownbrandData = [
     id: "ob18",
     rating: 0,
     title: "Захисні чохли серіїї Air Case",
-    categoryLink: "https://megabite.ua/shop/chehlyi-nakladki/",
+    categoryLink: "https://megabite.ua/shop/chehlyi-dlya-planshetov/",
     imgs: [
       require("../images/own-brands/tablet-case/air_case/1.jpg"),
       require("../images/own-brands/tablet-case/air_case/2.jpg"),
       require("../images/own-brands/tablet-case/air_case/3.jpg"),
     ],
-    video: "",
+    video: null,
     advantages: `<ul style="list-style: inside">
 <li><span>Легка та приємна на дотик</span></li>
 <li><span>Надійно захищає від ушкоджень</span></li>
@@ -858,6 +858,123 @@ const ownbrandData = [
 <li><span>Виступає над камерою й дисплеєм</span></li>
 <li><span>Проста в очищенні</span></li>
 </ul>`,
+  },
+  {
+    id: "ob19",
+    rating: 0,
+    title: "Захисні чохли серіїї Air Case",
+    categoryLink: "https://megabite.ua/shop/chehlyi-dlya-planshetov/",
+    imgs: [
+      require("../images/own-brands/tablet-case/smart_case/1.jpg"),
+      require("../images/own-brands/tablet-case/smart_case/2.jpg"),
+      require("../images/own-brands/tablet-case/smart_case/3.jpg"),
+      require("../images/own-brands/tablet-case/smart_case/4.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+	<li>Надійний захист від будь-яких пошкоджень</li>
+	<li>Високоякісні матеріали</li>
+	<li>Функція Wake/Sleep</li>
+	<li>Внутрішня частина з м&#39;якої мікрофібри</li>
+</ul>`,
+    category: "Чохли для планшету",
+    filter: "tablet-protection",
+    description: `<p><strong>Обкладинка ArmorStandart Smart Case</strong> забезпечить надійний захист вашого планшета від будь-яких типів ушкоджень. Основною перевагою чохла цього типу є захист дисплея пристрою. Саме на цій частині планшета подряпини й відколи створюють негативне враження від використання.</p>
+
+<p><strong>Функція Wake/Sleep</strong>, яка реалізована за допомогою магнітів, дає змогу неабияк продовжити використання планшета на одному заряді батареї завдяки зниженню використання екрана.</p>
+
+<p><strong>М&#39;яка мікрофібра</strong>, з якої складається внутрішня оболонка чохла ArmorStandart забезпечує додатковий захист від потрапляння пилу та сміття, а відповідно і від утворення нових дрібних подряпин на пристрої.</p>
+
+<p><strong>Особливості:</strong></p>
+
+<ul style="list-style: inside">
+	<li>Надійний захист від будь-яких пошкоджень</li>
+	<li>Високоякісні матеріали</li>
+	<li>Функція Wake/Sleep</li>
+	<li>Внутрішня частина з м&#39;якої мікрофібри</li>
+</ul>
+`,
+  },
+  {
+    id: "ob20",
+    rating: 0,
+    title: "Захисні чохли серіїї Elastic Band 8",
+    categoryLink: "https://megabite.ua/shop/chehlyi-dlya-planshetov/",
+    imgs: [
+      require("../images/own-brands/tablet-case/elastic_band_8/1.jpg"),
+      require("../images/own-brands/tablet-case/elastic_band_8/2.jpg"),
+      require("../images/own-brands/tablet-case/elastic_band_8/3.jpg"),
+      require("../images/own-brands/tablet-case/elastic_band_8/4.jpg"),
+      require("../images/own-brands/tablet-case/elastic_band_8/5.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li><span>Якісні матеріали</span></li>
+<li><span>Кілька розмірів для фіксації планшетів різного розміру</span></li>
+<li><span>Стильний дизайн</span></li>
+<li><span>Функціональний аксесуар</span></li>
+<li><span>Надійна застібка-гумка</span></li>
+</ul>`,
+    category: "Чохли для планшету",
+    filter: "tablet-protection",
+    description: `<p><b>Чохол для планшета Armorstandart Elastic Band 8</b><span> являє собою стильний, універсальний чохол зі штучної шкіри для планшетів розміром до 8 дюймів. Аксесуар у формі книжки надійно захистить ваш пристрій від механічних пошкоджень, подряпин і потертостей, надовго збереже первозданний зовнішній вигляд девайса.</span></p>
+<p><b>Зручність у використанні</b><b><br /></b><span>Додатково чохол має функцію зручної підставки для більш комфортного повсякденного використання планшета. Чохол щільно і надійно закріплює пристрій за допомогою силіконового кріплення, яке передбачено під кілька розмірів планшета. Кріплення виконане з високоякісних матеріалів.</span></p>
+<p><b>Стильний дизайн</b><b><br /></b><span>Чохол додасть планшету солідний і оригінальний зовнішній вигляд. У закритому стані чохол фіксує застібка-гумка, що дає додаткові гарантії щодо захисту пристрою.&nbsp;</span></p>
+<p><span>Універсальний і практичний аксесуар стане відмінним доповненням до вашого гаджету, ідеально впорається із захистом пристрою.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Якісні матеріали</span></li>
+<li><span>Кілька розмірів для фіксації планшетів різного розміру</span></li>
+<li><span>Стильний дизайн</span></li>
+<li><span>Функціональний аксесуар</span></li>
+<li><span>Надійна застібка-гумка</span></li>
+</ul>
+`,
+  },
+  {
+    id: "ob21",
+    rating: 0,
+    title: "Захисне скло серіїї Pro",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnoe-steklo/",
+    imgs: [
+      require("../images/own-brands/mobile-screen-protection/pro/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/5.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/6.jpg"),
+      require("../images/own-brands/mobile-screen-protection/pro/7.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li><span>Матеріал Japanese Asashi Glass з 4-годинним загартуванням</span></li>
+<li><span>Ідеальна чуйність тачскрина</span></li>
+<li><span>Абсолютна прозорість і чіткість зображення</span></li>
+<li><span>Покращене олеофобне й гідрофобне покриття</span></li>
+<li><span>Клейова основа нового покоління</span></li>
+<li><span>Оптимальні габарити та товщина</span></li>
+<li><span>Вирізи під усі датчики, камери та роз'єми</span></li>
+</ul>`,
+    category: "Захист екрану смартфону",
+    filter: "mobile-screen-protection",
+    description: `<p><b>Захисне скло Armorstandart Pro Series </b><span>- це абсолютно новий рівень захисту дисплея смартфона. У виробництві використовується матеріал Japenese Asashi Glass, який проходить загартування впродовж 4 годин. Це забезпечує ідеальну прозорість захисного покриття без спотворень зображення, а також потужний захист від тріщин і подряпин.</span></p>
+<p><span>Скло ніяк не впливає на чуйність тачскрина. У ньому міститься спеціальний матеріал, що перешкоджає появі відколів.</span></p>
+<p><b>Верхня частина</b><span> скла містить покращене олеофобне й гідрофобне покриття. Під час використання скла це забезпечує природні тактильні відчуття - пальці легко ковзають по поверхні. Водночас зображення відбивається з автентичною яскравістю й чіткістю без спотворень.</span></p>
+<p><b>Задня частина</b><span> по всій площі покрита клейовою основою нового покоління. Завдяки цьому досягається повний брак пухирців і можливість переклеювання скла в разі первісного нерівного встановлення.</span></p>
+<p><b>Захисне скло Armorstandart Pro Series</b><span> має оптимальні габарити та товщину на 0,3 мм. Передбачено вирізи під усі датчики, камери та роз'єми.</span></p>
+<p><span>До комплекту входить усе потрібне для швидкого та комфортного встановлення.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Матеріал Japanese Asashi Glass з 4-годинним загартуванням</span></li>
+<li><span>Ідеальна чуйність тачскрина</span></li>
+<li><span>Абсолютна прозорість і чіткість зображення</span></li>
+<li><span>Покращене олеофобне й гідрофобне покриття</span></li>
+<li><span>Клейова основа нового покоління</span></li>
+<li><span>Оптимальні габарити та товщина</span></li>
+<li><span>Вирізи під усі датчики, камери та роз'єми</span></li>
+</ul>
+`,
   },
 ];
 

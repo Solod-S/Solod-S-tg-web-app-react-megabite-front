@@ -6,11 +6,11 @@ import { FilterItem } from "../../components";
 
 import ownBrandsFilters from "../../data/ownBrandsFilters";
 
-function Filter({ setCurrentFilter }) {
+function Filter({ handleFilter }) {
   const location = useLocation();
   const [searchParamsFilter, setsearchParamsFilter] = useSearchParams();
   const selectedFilter = searchParamsFilter.get("filter") ?? null;
-  const handleFilter = (filter) => {
+  const selectFilter = (filter) => {
     setsearchParamsFilter({ filter: filter });
   };
 
@@ -19,8 +19,8 @@ function Filter({ setCurrentFilter }) {
       return;
     }
 
-    setCurrentFilter(selectedFilter);
-  }, [selectedFilter, setCurrentFilter]);
+    handleFilter(selectedFilter);
+  }, [selectedFilter, handleFilter]);
 
   return (
     <BtnSet>
@@ -34,7 +34,7 @@ function Filter({ setCurrentFilter }) {
               location.search.includes(filter) ||
               (!location.search && filter === "all")
             }
-            handleFilter={handleFilter}
+            selectFilter={selectFilter}
           />
         ))}
     </BtnSet>

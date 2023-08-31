@@ -10,11 +10,13 @@ import {
   Filter,
   Paginator,
   SectionWrapper,
+  Searchbar,
 } from "../../components";
 
 function OwnBrandsPage() {
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
   const [currentFilter, setCurrentFilter] = useState(null);
+  const [currentSearchProduct, setCurrentSearchProduct] = useState("");
 
   const [total, setTotal] = useState(null);
   const [currentSlice, setcurrentSlice] = useState([0, 6]);
@@ -30,6 +32,24 @@ function OwnBrandsPage() {
     setPageNumber(value);
     scrollToTop();
   };
+
+  const handleFilter = (select) => {
+    console.log(select, currentFilter);
+    setCurrentFilter(select);
+    setCurrentSearchProduct("");
+  };
+
+  useEffect(() => {
+    if (currentSearchProduct !== "") {
+      const result = ownbrandData.filter((pr) =>
+        pr.title
+          .toLocaleLowerCase()
+          .includes(currentSearchProduct.toLocaleLowerCase())
+      );
+      setOwnBrands(result);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentSearchProduct]);
 
   useEffect(() => {
     setTotal(ownBrands.length);
@@ -49,22 +69,36 @@ function OwnBrandsPage() {
     history(`?${searchParams.toString()}`);
 
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total, currentFilter, page, searchParams]);
-
+  }, [
+    history,
+    pageNumber,
+    total,
+    page,
+    searchParams,
+    currentSearchProduct,
+    ownBrands.length,
+    currentFilter,
+  ]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (currentFilter)
+    console.log(`currentFilterssssss`, currentFilter);
+    if (currentFilter !== null) {
       setOwnBrands(
         ownbrandData.filter((item) =>
           currentFilter !== "all" ? item.filter === currentFilter : item
         )
       );
+    }
   }, [currentFilter]);
 
   return (
     <SectionWrapper>
       <BackBtn location="/" />
-      <Filter setCurrentFilter={setCurrentFilter} />
+      <Searchbar
+        setCurrentSearchProduct={setCurrentSearchProduct}
+        setCurrentFilter={setCurrentFilter}
+      />
+      <Filter handleFilter={handleFilter} />
       <Menu data={ownBrands.slice(...currentSlice)} location={"own-brand"} />
       <Paginator
         count={Math.ceil(total / perPage)}

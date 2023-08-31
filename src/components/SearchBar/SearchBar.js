@@ -8,7 +8,7 @@ import {
 import { IoIosSearch } from "react-icons/io";
 import { useSearchParams } from "react-router-dom";
 
-function Searchbar({ setCurrentSearchProduct }) {
+function Searchbar({ setCurrentSearchProduct, setCurrentFilter }) {
   const [searchQuery, setSearchQuery] = useSearchParams();
 
   const currentQuery = searchQuery.get("query") ?? "";
@@ -20,13 +20,13 @@ function Searchbar({ setCurrentSearchProduct }) {
 
     setSearchQuery({ query: inputQuery });
     searcForm.reset();
+    setCurrentFilter(null);
   };
 
   useEffect(() => {
     if (!currentQuery) {
       return;
     }
-
     setCurrentSearchProduct(currentQuery);
   }, [currentQuery, setCurrentSearchProduct]);
 

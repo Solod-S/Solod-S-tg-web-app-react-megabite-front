@@ -33,6 +33,12 @@ function OwnBrandsPage() {
     scrollToTop();
   };
 
+  const handleFilter = (select) => {
+    console.log(select, currentFilter);
+    setCurrentFilter(select);
+    setCurrentSearchProduct("");
+  };
+
   useEffect(() => {
     if (currentSearchProduct !== "") {
       const result = ownbrandData.filter((pr) =>
@@ -42,6 +48,7 @@ function OwnBrandsPage() {
       );
       setOwnBrands(result);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSearchProduct]);
 
   useEffect(() => {
@@ -57,28 +64,40 @@ function OwnBrandsPage() {
       setPageNumber(total / perPage);
     }
 
-    searchParams.set("page", pageNumber);
+    searchParams.set("page", pageNumber ? pageNumber : 1);
     currentFilter !== null ?? searchParams.set("filter", currentFilter);
     history(`?${searchParams.toString()}`);
 
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [history, pageNumber, total, currentFilter, page, searchParams]);
-
+  }, [
+    history,
+    pageNumber,
+    total,
+    page,
+    searchParams,
+    currentSearchProduct,
+    ownBrands.length,
+    currentFilter,
+  ]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (currentFilter)
+    if (currentFilter !== null) {
       setOwnBrands(
         ownbrandData.filter((item) =>
           currentFilter !== "all" ? item.filter === currentFilter : item
         )
       );
+    }
   }, [currentFilter]);
 
   return (
     <SectionWrapper>
       <BackBtn location="/" />
-      <Searchbar setCurrentSearchProduct={setCurrentSearchProduct} />
-      <Filter setCurrentFilter={setCurrentFilter} />
+      <Searchbar
+        setCurrentSearchProduct={setCurrentSearchProduct}
+        setCurrentFilter={setCurrentFilter}
+      />
+      <Filter handleFilter={handleFilter} />
       <Menu data={ownBrands.slice(...currentSlice)} location={"own-brand"} />
       <Paginator
         count={Math.ceil(total / perPage)}

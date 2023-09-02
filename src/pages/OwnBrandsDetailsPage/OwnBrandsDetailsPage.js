@@ -1,4 +1,6 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { getCatalogBackLinkHref } from "../../redux/app/appSelectors";
 import ownbrandData from "../../data/ownbrandData";
 
 import {
@@ -9,11 +11,10 @@ import {
 } from "../../components";
 
 function OwnBrandsDetailsPage() {
-  const location = useLocation();
   const { ownbrandDataId } = useParams();
 
   const portfolioItem = getPortfolioById(ownbrandDataId);
-  const backLinkHref = location.state?.from ?? "/own-brand";
+  const backLinkHref = useSelector(getCatalogBackLinkHref);
 
   function getPortfolioById(ownbrandDataId) {
     return ownbrandData.find((item) => item.id === ownbrandDataId);
@@ -26,7 +27,9 @@ function OwnBrandsDetailsPage() {
 
   return (
     <SectionWrapper>
-      <BackBtn location={backLinkHref} />
+      <BackBtn
+        location={backLinkHref ? "/own-brand?" + backLinkHref : "/own-brand"}
+      />
       <ProductItem portfolioItem={portfolioItem} />
       {sameTypeList.length > 0 && (
         <OwnBrandDetailsList

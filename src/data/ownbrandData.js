@@ -976,6 +976,208 @@ const ownbrandData = [
 </ul>
 `,
   },
+  {
+    id: "ob22",
+    rating: 0,
+    title: "Захисне скло серіїї Icon",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnoe-steklo/",
+    imgs: [
+      require("../images/own-brands/mobile-screen-protection/icon/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/icon/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/icon/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/icon/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/icon/5.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li><span>Інноваційний загартоване скло</span></li>
+<li><span>Максимальна міцність і гладкість поверхні</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень</span></li>
+<li><span>Остаточно доопрацьоване олеофобним і гидрофобное покриття</span></li>
+<li><span>Клейова основа найкращої якості</span></li>
+<li><span>Автентичні габарити та оптимальна товщина</span></li>
+<li><span>Вирізи під всі датчики, камери й роз'єми</span></li>
+</ul>`,
+    category: "Захист екрану смартфону",
+    filter: "mobile-screen-protection",
+    description: `<p><b>Захисне скло Armorstandart Icon Series</b> <b>-</b><span> це новий неймовірний рівень захисту дисплеїв смартфонів. У виробництві використовується інноваційне загартоване скло, який проходить спеціальну обробку протягом декількох годин для досягнення максимальної міцності і гладкості поверхні. Завдяки цьому вдалося досягти ідеальну прозорість захисного покриття без спотворень зображення, а також найкращий захист від тріщин і подряпин. При установці даного захисного скла чуйність дисплея ніяк не зміниться. У ньому міститься спеціальний матеріал, що перешкоджає появі відколів.&nbsp;</span></p>
+<p><b>Верхня частина скла</b><span> містить фінально доопрацьоване олеофобним і гидрофобное покриття. При використанні скла це забезпечує максимально природні тактильні відчуття - пальці легко ковзають по поверхні. Зображення відображається з високою чіткістю і природною яскравістю.&nbsp;</span></p>
+<p><b>Задня частина</b><span> по всій площі покрита клейової великим клейовим шаром найкращої якості. Вдалося досягти повна відсутність міхурів при первинній установці.&nbsp;</span></p>
+<p><b>Захисне скло Armorstandart Icon Series</b><span> має автентичні габарити і товщину в 0,3 мм. Передбачені вирізи під всі датчики, камери і роз'єми. У комплект входить все необхідне для швидкого та комфортної установки.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Інноваційний загартоване скло</span></li>
+<li><span>Максимальна міцність і гладкість поверхні</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень</span></li>
+<li><span>Остаточно доопрацьоване олеофобним і гидрофобное покриття</span></li>
+<li><span>Клейова основа найкращої якості</span></li>
+<li><span>Автентичні габарити та оптимальна товщина</span></li>
+<li><span>Вирізи під всі датчики, камери й роз'єми</span></li>
+</ul>
+<p><b>Комплект постачання:</b><span> Захисне скло на підкладці в упаковці + комплект аксесуарів для поклейки (волога і суха серветки, стікери)</span></p>
+<p><br /><br /></p>
+<div id="gtx-trans" style="position: absolute; left: 372px; top: 36px;">
+<div class="gtx-trans-icon"></div>
+</div>
+`,
+  },
+  {
+    id: "ob23",
+    rating: 0,
+    title: "Захисне скло серіїї Full Glue",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnoe-steklo/",
+    imgs: [
+      require("../images/own-brands/mobile-screen-protection/full-glue/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/full-glue/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/full-glue/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/full-glue/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/full-glue/5.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li ><span>Проста установка</span></li>
+<li ><span>Стійкість до подряпин</span></li>
+<li ><span>Відмінна чуйність екрану</span></li>
+<li ><span>Ідеальна передача кольорів</span></li>
+<li ><span>Стійкість до ударів</span></li>
+<li ><span>Клейова основа на всю поверхню скла</span></li>
+</ul>`,
+    category: "Захист екрану смартфону",
+    filter: "mobile-screen-protection",
+    description: `<p><b>Захисне скло Armorstandart Full Glue</b> <b>HD</b><span> закриває не тільки дисплей смартфона, а і його рамку, при цьому наклеюється по всій площі дисплею. Воно виготовлене з якісних матеріалів і допоможе захистити смартфон від механічних пошкоджень.</span></p>
+<p><b>Скло</b><span> відмінно запобігає появі не тільки подряпин, а і сколів, а також тріщин на экрані смартфона.</span></p>
+<p><b>Повна проклейка скла</b><span> по всій площині дисплею забезпечує відсутність повітряних прослоювань, а також максимально чуйну роботу сенсору, що особливо важливо при постійному використовуванню пристрою.</span></p>
+<p><b>Переваги:</b></p>
+<ul style="list-style: inside">
+<li ><span>Проста установка</span></li>
+<li ><span>Стійкість до подряпин</span></li>
+<li ><span>Відмінна чуйність екрану</span></li>
+<li ><span>Ідеальна передача кольорів</span></li>
+<li ><span>Стійкість до ударів</span></li>
+<li ><span>Клейова основа на всю поверхню скла</span></li>
+</ul>
+`,
+  },
+  {
+    id: "ob24",
+    rating: 0,
+    title: "Захисне скло серіїї Black Icon Space",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnoe-steklo/",
+    imgs: [
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/5.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/6.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/7.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_space/8.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li><span>Загартоване скло Asahi Glass;</span></li>
+<li><span>Захисна сітка з нержавіючої сталі;</span></li>
+<li><span>Передові матеріали у виробництві;</span></li>
+<li><span>Hardness coating - додатковий захист від подряпин і гострих предметів;</span></li>
+<li><span>Максимально тонке без втрати міцності та гладкості;</span></li>
+<li><span>Сенсор телефону працює без змін;</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень;</span></li>
+<li><span>Покращено олеофобне і гидрофобное покриття (не залишаються відбитки пальців);</span></li>
+<li><span>Клейова основа найкращої якості;</span></li>
+<li><span>Anti-static effect;</span></li>
+<li><span>Округлені 2.5D краю.</span></li>
+</ul>`,
+    category: "Захист екрану смартфону",
+    filter: "mobile-screen-protection",
+    description: `<p><b>Захисне скло ArmorStandart Space Black Icon</b><span> - це загартоване скло Asahi Glass з рамкою забезпечить максимальний захист вашого гаджета. Воно повністю повторює розмір дисплея вашого смартфона для максимально комфортного використання пристрою. Додатковим захистом є наявність сітки 3D dust proof net з нержавіючої сталі, яка перешкоджає засміченню і пошкодження динаміка.<br /><br /></span><b>У виробництві використовується високоякісна загартоване скло</b><span>, завдяки вдосконаленій технології hardness coating, воно менш схильне до виникнення подряпин і пошкоджень гострими предметами, при цьому залишаючись ультратонким і міцним, має гладку поверхню і не потовщує ваш телефон.</span></p>
+<p><span>При установці даного захисного скла чуйність дисплея ніяк не зміниться.</span></p>
+<p><b>Розроблене за передовими технологіями нове олеофобним покриття </b><span>дозволяє забезпечувати максимально природні тактильні відчуття - пальці легко ковзають по поверхні, не залишаючи слідів. Зображення передається з високою чіткістю і природною яскравістю.</span></p>
+<p><b>Поліпшена клейова основа </b><span>дозволить зробити установку легко без повітряних бульбашок, а також дає можливість повторити установку до 20 разів при необхідності. Anti-static effect зменшує ймовірність потрапляння сміття в 4 рази при установці.</span></p>
+<p><b>Захисне скло ArmorStandart Space Black Icon</b><span> має автентичні габарити завдяки округленим 2.5D краю і товщину в 0,3 мм. Скло покриває весь дисплей телефону. У комплект входить все необхідне для швидкої та комфортної установки.</span></p>
+<p><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Загартоване скло Asahi Glass;</span></li>
+<li><span>Захисна сітка з нержавіючої сталі;</span></li>
+<li><span>Передові матеріали у виробництві;</span></li>
+<li><span>Hardness coating - додатковий захист від подряпин і гострих предметів;</span></li>
+<li><span>Максимально тонке без втрати міцності та гладкості;</span></li>
+<li><span>Сенсор телефону працює без змін;</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень;</span></li>
+<li><span>Покращено олеофобне і гидрофобное покриття (не залишаються відбитки пальців);</span></li>
+<li><span>Клейова основа найкращої якості;</span></li>
+<li><span>Anti-static effect;</span></li>
+<li><span>Округлені 2.5D краю.</span></li>
+</ul>
+`,
+  },
+  {
+    id: "ob25",
+    rating: 0,
+    title: "Захисне скло серіїї Black Icon Supreme ",
+    categoryLink:
+      "https://megabite.ua/shop/zaschitnyie-plenki-i-stekla/tip-zashchitnoe-steklo/",
+    imgs: [
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/1.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/2.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/3.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/4.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/5.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/6.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/7.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/8.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/9.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/10.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/11.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/12.jpg"),
+      require("../images/own-brands/mobile-screen-protection/black_icon_supreme/13.jpg"),
+    ],
+    video: null,
+    advantages: `<ul style="list-style: inside">
+<li><span>Загартоване скло Asahi Glass;</span></li>
+<li><span>Антибактеріальні властивості;</span></li>
+<li><span>Захисна сітка з нержавіючої сталі;</span></li>
+<li><span>Передові матеріали у виробництві;</span></li>
+<li><span>Hardness coating - додатковий захист від подряпин і гострих предметів;</span></li>
+<li><span>Максимально тонке без втрати міцності та гладкості;</span></li>
+<li><span>Сенсор телефону працює без змін;</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень;</span></li>
+<li><span>Покращено олеофобне і гидрофобное покриття (не залишаються відбитки пальців);</span></li>
+<li><span>Клейова основа найкращої якості;</span></li>
+<li><span>Anti-static effect;</span></li>
+<li><span>Округлені 3D края.</span></li>
+</ul>`,
+    category: "Захист екрану смартфону",
+    filter: "mobile-screen-protection",
+    description: `<p><b>Захисне скло ArmorStandart Black Icon Supreme </b><span>- це загартоване скло Asahi Glass з рамкою забезпечить максимальний захист вашого гаджета. Воно повністю повторює розмір дисплея вашого смартфона для максимально комфортного використання пристрою. Додатковим захистом є наявність сітки 3D dust proof net з нержавіючої сталі, яка перешкоджає засміченню і пошкодження динаміка.</span></p>
+<p><b>У виробництві використовується високоякісна загартоване скло</b><span>, завдяки вдосконаленій технології hardness coating, воно менш схильне до виникнення подряпин і пошкоджень гострими предметами, при цьому залишаючись ультратонким і міцним, має гладку поверхню і не потовщує ваш телефон.</span></p>
+<p><b>Скло має антибактеріальну властивість.</b><span> Завдяки інноваційній технології, в її основі лежить дифузія іонів срібла в верхньому шарі скла. Іони срібла взаємодіють з бактеріями, які потрапляють на поверхню скла, і знищують їх, порушуючи при цьому механізм їх поділу.</span></p>
+<p><span>При установці даного захисного скла чуйність дисплея ніяк не зміниться.</span></p>
+<p><b>Розроблене за передовими технологіями нове олеофобним покриття</b><span> дозволяє забезпечувати максимально природні тактильні відчуття - пальці легко ковзають по поверхні, не залишаючи слідів. Зображення передається з високою чіткістю і природною яскравістю.</span></p>
+<p><b>Поліпшена клейова основа</b><span> дозволить зробити установку легко без повітряних бульбашок, а також дає можливість повторити установку до 20 разів при необхідності. Anti-static effect зменшує ймовірність потрапляння сміття в 4 рази при установці.</span></p>
+<p><b>Захисне скло ArmorStandart Black Icon Supreme </b><span>має автентичні габарити завдяки округленим 3D края і товщину в 0,3 мм. Скло покриває весь дисплей телефону. У комплект входить все необхідне для швидкої та комфортної установки.</span></p>
+<p><span>&nbsp;</span><b>Особливості:</b></p>
+<ul style="list-style: inside">
+<li><span>Загартоване скло Asahi Glass;</span></li>
+<li><span>Антибактеріальні властивості;</span></li>
+<li><span>Захисна сітка з нержавіючої сталі;</span></li>
+<li><span>Передові матеріали у виробництві;</span></li>
+<li><span>Hardness coating - додатковий захист від подряпин і гострих предметів;</span></li>
+<li><span>Максимально тонке без втрати міцності та гладкості;</span></li>
+<li><span>Сенсор телефону працює без змін;</span></li>
+<li><span>Ідеальна прозорість захисного покриття без спотворень;</span></li>
+<li><span>Покращено олеофобне і гидрофобное покриття (не залишаються відбитки пальців);</span></li>
+<li><span>Клейова основа найкращої якості;</span></li>
+<li><span>Anti-static effect;</span></li>
+<li><span>Округлені 3D края.</span></li>
+</ul>
+<div id="gtx-trans" style="position: absolute; left: 423px; top: 36px;">
+<div class="gtx-trans-icon"></div>
+</div>
+`,
+  },
 ];
 
 export default ownbrandData;

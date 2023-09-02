@@ -35,7 +35,6 @@ const ProductItem = ({ portfolioItem }) => {
           <Video
             url={video}
             controls
-            playIcon
             width="100%"
             height="100%"
             style={{

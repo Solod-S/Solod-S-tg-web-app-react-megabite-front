@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
+
+import { useDispatch } from "react-redux";
+import { setBackLinkHref } from "../../redux/app/appSlice";
+
 import { scrollToTop } from "../../utils";
 
 import ownbrandData from "../../data/ownbrandData";
@@ -14,27 +18,34 @@ import {
 } from "../../components";
 
 function OwnBrandsPage() {
+  const dispatch = useDispatch();
+
   const [ownBrands, setOwnBrands] = useState(ownbrandData);
   const [currentFilter, setCurrentFilter] = useState(null);
   const [currentSearchProduct, setCurrentSearchProduct] = useState("");
-
   const [total, setTotal] = useState(null);
   const [currentSlice, setcurrentSlice] = useState([0, 6]);
-  const history = useNavigate();
+
   const { search } = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const currentParams = new URLSearchParams(search);
 
-  const [searchParams] = useSearchParams();
-  const page = search.slice(-1);
-  const [pageNumber, setPageNumber] = useState(+page);
+  const page = currentParams.get("page")
+    ? Number(currentParams.get("page"))
+    : 1;
+  const [pageNumber, setPageNumber] = useState(page);
   const perPage = 6;
-
-  const handleChange = (event, value) => {
+  const handlePaginatorChange = (event, value) => {
     setPageNumber(value);
+    const currentParams = new URLSearchParams(search);
+    // Устанавливаем только параметр 'page'
+    currentParams.set("page", value);
+    // Устанавливаем обновленные параметры
+    setSearchParams(currentParams);
     scrollToTop();
   };
 
   const handleFilter = (select) => {
-    console.log(select, currentFilter);
     setCurrentFilter(select);
     setCurrentSearchProduct("");
   };
@@ -48,7 +59,6 @@ function OwnBrandsPage() {
       );
       setOwnBrands(result);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSearchProduct]);
 
   useEffect(() => {
@@ -58,6 +68,11 @@ function OwnBrandsPage() {
   useEffect(() => {
     if (pageNumber <= 0 || pageNumber > Math.ceil(ownBrands.length / perPage)) {
       setPageNumber(1);
+      const currentParams = new URLSearchParams(search);
+      // Устанавливаем только параметр 'page'
+      currentParams.set("page", 1);
+      // Устанавливаем обновленные параметры
+      setSearchParams(currentParams);
     }
 
     if (total / perPage === page - 6) {
@@ -66,11 +81,9 @@ function OwnBrandsPage() {
 
     searchParams.set("page", pageNumber ? pageNumber : 1);
     currentFilter !== null ?? searchParams.set("filter", currentFilter);
-    history(`?${searchParams.toString()}`);
-
+    dispatch(setBackLinkHref(searchParams.toString()));
     setcurrentSlice([pageNumber * perPage - 6, pageNumber * perPage]);
   }, [
-    history,
     pageNumber,
     total,
     page,
@@ -78,8 +91,11 @@ function OwnBrandsPage() {
     currentSearchProduct,
     ownBrands.length,
     currentFilter,
+    dispatch,
+    search,
+    setSearchParams,
   ]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     if (currentFilter !== null) {
       setOwnBrands(
@@ -102,7 +118,7 @@ function OwnBrandsPage() {
       <Paginator
         count={Math.ceil(total / perPage)}
         page={pageNumber}
-        handleChange={handleChange}
+        handleChange={handlePaginatorChange}
       />
       <BackBtn location="/" />
     </SectionWrapper>

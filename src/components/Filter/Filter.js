@@ -7,11 +7,26 @@ import { FilterItem } from "../../components";
 import ownBrandsFilters from "../../data/ownBrandsFilters";
 
 function Filter({ handleFilter }) {
+  const { search } = useLocation();
   const location = useLocation();
   const [searchParamsFilter, setsearchParamsFilter] = useSearchParams();
   const selectedFilter = searchParamsFilter.get("filter") ?? null;
   const selectFilter = (filter) => {
-    setsearchParamsFilter({ filter: filter });
+    // setsearchParamsFilter({ filter: filter });
+
+    const currentParams = new URLSearchParams(search);
+
+    // Проверяем наличие параметра 'query'
+    if (currentParams.has("query")) {
+      // Если 'query' существует, удаляем его
+      currentParams.delete("query");
+    }
+
+    // Устанавливаем параметр 'filter'
+    currentParams.set("filter", filter);
+
+    // Устанавливаем обновленные параметры
+    setsearchParamsFilter(currentParams);
   };
 
   useEffect(() => {
@@ -32,7 +47,7 @@ function Filter({ handleFilter }) {
             title={title}
             active={
               location.search.includes(filter) ||
-              (!location.search && filter === "all")
+              (!searchParamsFilter.get("filter") && filter === "all")
             }
             selectFilter={selectFilter}
           />

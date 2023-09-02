@@ -14,7 +14,7 @@ import {
 
 import { scrollToTop } from "../../utils";
 
-function MenuItem({ itemProps, location, backLinkHref }) {
+function MenuItem({ itemProps, location }) {
   const currentLocation = useLocation();
   switch (true) {
     case location === "mainMenu":
@@ -68,11 +68,7 @@ function MenuItem({ itemProps, location, backLinkHref }) {
     case location === "own-brand-similar-list":
       return (
         <Item>
-          <Link
-            to={`/own-brand/${itemProps.id}`}
-            onClick={scrollToTop}
-            state={{ from: backLinkHref }}
-          >
+          <Link to={`/own-brand/${itemProps.id}`} onClick={scrollToTop}>
             <Wrapper>
               <Poster
                 src={itemProps.imgs[0]}

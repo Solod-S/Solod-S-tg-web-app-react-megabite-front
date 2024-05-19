@@ -1,12 +1,12 @@
 const portfolio = [
-  {
-    id: "p0",
-    title: "Акції",
-    img: require("../images/technocrack.jpg"),
-    category: "Discount",
-    filter: "discount",
-    description: "Ловіть момент: найвигідніші акції для вас!",
-  },
+  // {
+  //   id: "p0",
+  //   title: "Акції",
+  //   img: require("../images/technocrack.jpg"),
+  //   category: "Discount",
+  //   filter: "discount",
+  //   description: "Ловіть момент: найвигідніші акції для вас!",
+  // },
   {
     id: "p1",
     title: "Власна торгова марка",
@@ -43,13 +43,13 @@ const portfolio = [
     description:
       "Ми створюємо більше ніж просто аксесуари: дізнайтеся нашу місію.",
   },
-  {
-    id: "p5",
-    title: "Форма зворотнього зв'язку",
-    img: require("../images/menu/feedback.jpg"),
-    category: "Form",
-    filter: "form",
-    description: "Ваші думки – наш курс до вдосконалення.",
-  },
+  // {
+  //   id: "p5",
+  //   title: "Форма зворотнього зв'язку",
+  //   img: require("../images/menu/feedback.jpg"),
+  //   category: "Form",
+  //   filter: "form",
+  //   description: "Ваші думки – наш курс до вдосконалення.",
+  // },
 ];
 export default portfolio;

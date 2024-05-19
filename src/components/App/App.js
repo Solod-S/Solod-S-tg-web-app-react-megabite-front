@@ -3,9 +3,9 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { SharedLayout } from "../../components";
 import {
   MenuPage,
-  DiscountPage,
-  TGFormPage,
-  WebFormPage,
+  // DiscountPage,
+  // TGFormPage,
+  // WebFormPage,
   ContactPage,
   OwnBrandsPage,
   OwnBrandsDetailsPage,
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route end path="/" element={<SharedLayout />}>
           <Route index element={<MenuPage />} />
-          <Route path="/discount" element={<DiscountPage />} />
+          {/* <Route path="/discount" element={<DiscountPage />} /> */}
           <Route path="/own-brand" element={<OwnBrandsPage />} />
           <Route
             path="own-brand/:ownbrandDataId"
@@ -28,8 +28,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/refund" element={<RefundPage />} />
           <Route path="/about" element={<CompanyAboutPage />} />
-          <Route path="/tgform" element={<TGFormPage />} />
-          <Route path="/form" element={<WebFormPage />} />
+          {/* <Route path="/tgform" element={<TGFormPage />} /> */}
+          {/* <Route path="/form" element={<WebFormPage />} /> */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
